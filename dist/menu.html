@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=1200">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+    <link rel="alternate" href="http://example.com/" hreflang="x-default" />
+
+	<link rel="stylesheet" href="libs/normalize.css">
+	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta property="og:title" content="Free contactless QR menu and ordering for restaurants | Instalacarte"/>
+	<meta property="og:description" content="Upgrade your restaurant with a contactless QR menu and cloud based ordering. Great customer experience and no waiting means more returning clients and less waiters."/>
+	<meta property="og:image" content="img/facebook-logo.jpg"/>
+</head>
+<body class="panel">
+	<!--HEADER-->
+	<header class="header-panel">
+		<div class="header-panel__wrapper">
+            <a href="#help" class="btn header-panel__help-btn" data-fancybox>
+				Help
+			</a>
+			<a href="mailto:hello@instalacarte.com" class="header__email">
+				hello@instalacarte.com
+			</a>
+			<div class="lang">
+				<div class="lang__title">
+					English
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							Русский
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Poland
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="person-wrapper">
+				<div class="person">
+					<svg>
+						<use xlink:href="img/user.svg#icon"/>
+					</svg>
+				</div>
+				<div class="person-wrapper__list">
+					<div class="person-wrapper__inner">
+						<a href="mailto:instalacarte@gmail.com">instalacarte@gmail.com</a>
+						<a href="#">Exit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--SIDEBAR-->
+	<div class="sidebar">
+		<a href="/" class="sidebar__logo">
+			<img src="img/logo-admin.png" alt="">
+		</a>
+		<div class="menu">
+			<ul class="menu__list">
+				<li>
+					<a href="establishment.html" class="menu__link active">
+						Business info
+					</a>
+				</li>
+				<li>
+					<div class="menu__link menu__link--parent" data-target="#menu1">
+						<a href="menu.html">
+							Menu
+						</a>
+						<span class="menu__arrow">
+							<svg>
+								<use xlink:href="img/arrow.svg#icon"/>
+							</svg>
+						</span>
+					</div>
+					<ul id="menu1">
+						<li><a href="category.html">Starters</a></li>
+						<li><a href="category.html">Salads</a></li>
+						<li><a href="category.html">Meat</a></li>
+						<li><a href="category.html">Deserts</a></li>
+						<li><a href="category.html">Popular</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="wi-fi.html" class="menu__link">
+						Wi-Fi QR Code Generator
+					</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+
+	<div class="panel__wrapper">
+		<div class="console">
+			<div class="console__top">
+				<div class="console__title">		
+					Menu
+				</div>
+				<a href="#create-category" class="btn" data-fancybox-my>
+					Create Category
+				</a>
+			</div>
+			<div class="menu-page">
+				<div class="menu-page__bl j-load-item">
+					<div class="menu-page__item">
+						<a href="category.html" class="console__title">
+							<div class="menu-page__img j-load-el">
+								&#127817;
+							</div>
+							<div class="menu-page__title j-load-el">Starters</div>
+						</a>
+						<div class="menu-info">
+							
+							<div class="menu-info__btn j-load-el">
+								<svg>
+									<use xlink:href="img/edit.svg#icon"/>
+								</svg>
+								Edit
+							</div>
+							<div class="menu-info__btn menu-info__btn--delete j-load-el" data-fancybox data-src="#delete">
+								Delete
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-page__bl j-load-item">
+					<div class="menu-page__item">
+						<a href="category.html" class="console__title">
+							<div class="menu-page__img j-load-el">
+								&#129364;
+							</div>
+							<div class="menu-page__title j-load-el">Starters</div>
+						</a>
+						<div class="menu-info">
+							
+							<div class="menu-info__btn j-load-el">
+								<svg>
+									<use xlink:href="img/edit.svg#icon"/>
+								</svg>
+								Edit
+							</div>
+							<div class="menu-info__btn menu-info__btn--delete j-load-el" data-fancybox data-src="#delete">
+								Delete
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-page__bl j-load-item">
+					<div class="menu-page__item">
+						<a href="category.html" class="console__title">
+							<div class="menu-page__img j-load-el">
+								<img src="img/saldlasdlalsdlasdl.jpg" alt="">
+							</div>
+							<div class="menu-page__title j-load-el">Starters</div>
+						</a>
+						<div class="menu-info">
+							
+							<div class="menu-info__btn j-load-el">
+								<svg>
+									<use xlink:href="img/edit.svg#icon"/>
+								</svg>
+								Edit
+							</div>
+							<div class="menu-info__btn menu-info__btn--delete j-load-el" data-fancybox data-src="#delete">
+								Delete
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-page__bl j-load-item">
+					<div class="menu-page__item">
+						<a href="category.html" class="console__title">
+							<div class="menu-page__img j-load-el">
+								<img src="img/icon2.svg" alt="">
+							</div>
+							<div class="menu-page__title j-load-el">Starters</div>
+						</a>
+						<div class="menu-info">
+							
+							<div class="menu-info__btn j-load-el">
+								<svg>
+									<use xlink:href="img/edit.svg#icon"/>
+								</svg>
+								Edit
+							</div>
+							<div class="menu-info__btn menu-info__btn--delete j-load-el" data-fancybox data-src="#delete">
+								Delete
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-page__bl j-load-item">
+					<div class="menu-page__item">
+						<a href="category.html" class="console__title">
+							<div class="menu-page__img j-load-el">
+								<img src="img/saldlasdlalsdlasdl.jpg" alt="">
+							</div>
+							<div class="menu-page__title j-load-el">Starters</div>
+						</a>
+						<div class="menu-info">
+							
+							<div class="menu-info__btn j-load-el">
+								<svg>
+									<use xlink:href="img/edit.svg#icon"/>
+								</svg>
+								Edit
+							</div>
+							<div class="menu-info__btn menu-info__btn--delete j-load-el" data-fancybox data-src="#delete">
+								Delete
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-page__bl j-load-item">
+					<div class="menu-page__item">
+						<a href="category.html" class="console__title">
+							<div class="menu-page__img j-load-el">
+								<img src="img/icon2.svg" alt="">
+							</div>
+							<div class="menu-page__title j-load-el">Starters</div>
+						</a>
+						<div class="menu-info">
+							
+							<div class="menu-info__btn j-load-el">
+								<svg>
+									<use xlink:href="img/edit.svg#icon"/>
+								</svg>
+								Edit
+							</div>
+							<div class="menu-info__btn menu-info__btn--delete j-load-el" data-fancybox data-src="#delete">
+								Delete
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--CREATE CATEGORY-->
+	<div class="modal create-cat create-cat--parent" id="create-category">
+		<form>
+			<div class="modal__inner">
+				<div class="create-cat__top">
+					<div class="modal__title">
+						New category
+					</div>
+					<div class="label">
+						<div class="label__title">
+							Unique Name
+						</div>
+						<div class="label__desc">
+							№001
+						</div>
+					</div>
+				</div>
+				<div class="input-wrapper">
+					<div class="create-cat__file" id="load-img">
+						<label class="new-item__file j-file-wrap">
+							<input type="file" class="j-file">
+							<div class="new-item__file-img">
+								<button type="button" class="fancybox-button fancybox-close-small j-remove-img hide" data-default-img="img/default-img.jpg">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+								</button>
+								<img src="" alt="" class="j-file-img">
+								<div class="new-item__file-text">
+									<svg>
+										<use xlink:href="img/upload.svg#icon"></use>
+									</svg>
+									<div>Upload Photo</div>
+								</div>
+							</div>
+						</label>
+					</div>
+					<label class="label">
+						<div class="label__title">
+							Title
+						</div>
+						<input type="text" class="input" required autocomplete="off">
+					</label>
+					<div class="label create-cat__icons">
+						<div class="label__title">
+							Choose icon
+							<div class="create-cat__icons-wrapper">
+								<button type="submit" class="btn">
+									Create
+								</button>
+								<div class="create-cat__load-img" data-target="#load-img">
+									Download your icon
+								</div>
+							</div>
+						</div>
+						<div class="create-cat__icons-scroll">
+							<div class="create-cat__radios">
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											<img src="img/icon2.svg" alt="">
+										</div>
+										<div class="create-cat__radio-title">
+											PopularPopular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											<img src="img/icon3.svg" alt="">
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+								<label class="create-cat__radio">
+									<input type="radio" name="img" checked>
+									<div class="create-cat__radio-bl">
+										<div class="create-cat__radio-img">
+											&#x1F44C;
+										</div>
+										<div class="create-cat__radio-title">
+											Popular
+										</div>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal create-cat delete-cat" id="delete">
+		<div class="modal__inner">
+			<div class="modal__title">
+				Are you sure to delete Name category?
+			</div>
+			<div class="delete-cat__btns">
+				<div class="delete-cat__btns-col">
+					<a href="#" class="btn">
+						Delete
+					</a>
+				</div>
+				<div class="delete-cat__btns-col">
+					<a href="#" class="btn btn--border" data-fancybox-close>
+						Cancel
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="modal create-cat" id="help">
+        <div class="modal__inner">
+            <div class="modal__title">
+                Help
+            </div>
+            <div class="input-wrapper">
+                <label class="label">
+                    <div class="label__title">
+                        Email
+                    </div>
+                    <input type="text" class="input" required="" autocomplete="off" placeholder="Your email">
+                </label>
+                <label class="label">
+                    <div class="label__title">
+                        Message
+                    </div>
+                    <textarea rows="5" class="input" placeholder="Your message"></textarea>
+                </label>
+                <button type="submit" class="btn">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/underscore.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.plugins.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="libs/jquery.fancybox.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script src="libs/jquery.nice-select.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

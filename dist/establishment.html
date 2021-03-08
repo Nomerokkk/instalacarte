@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Business info</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=1200">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+    <link rel="alternate" href="http://example.com/" hreflang="x-default" />
+
+	<link rel="stylesheet" href="libs/normalize.css">
+	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta property="og:title" content="Free contactless QR menu and ordering for restaurants | Instalacarte"/>
+	<meta property="og:description" content="Upgrade your restaurant with a contactless QR menu and cloud based ordering. Great customer experience and no waiting means more returning clients and less waiters."/>
+	<meta property="og:image" content="img/facebook-logo.jpg"/>
+</head>
+<body class="panel">
+	<!--HEADER-->
+	<header class="header-panel">
+		<div class="header-panel__wrapper">
+            <a href="#help" class="btn header-panel__help-btn" data-fancybox>
+				Help
+			</a>
+			<a href="mailto:hello@instalacarte.com" class="header__email">
+				hello@instalacarte.com
+			</a>
+			<div class="lang">
+				<div class="lang__title">
+					English
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							Русский
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Poland
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="person-wrapper">
+				<div class="person">
+					<svg>
+						<use xlink:href="img/user.svg#icon"/>
+					</svg>
+				</div>
+				<div class="person-wrapper__list">
+					<div class="person-wrapper__inner">
+						<a href="mailto:instalacarte@gmail.com">instalacarte@gmail.com</a>
+						<a href="#">Exit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--SIDEBAR-->
+	<div class="sidebar">
+		<a href="/" class="sidebar__logo">
+			<img src="img/logo-admin.png" alt="">
+		</a>
+		<div class="menu">
+			<ul class="menu__list">
+				<li>
+					<a href="establishment.html" class="menu__link active">
+						Business info
+					</a>
+				</li>
+				<li>
+					<div class="menu__link menu__link--parent" data-target="#menu1">
+						<a href="menu.html">
+							Menu
+						</a>
+						<span class="menu__arrow">
+							<svg>
+								<use xlink:href="img/arrow.svg#icon"/>
+							</svg>
+						</span>
+					</div>
+					<ul id="menu1">
+						<li><a href="category.html">Starters</a></li>
+						<li><a href="category.html">Salads</a></li>
+						<li><a href="category.html">Meat</a></li>
+						<li><a href="category.html">Deserts</a></li>
+						<li><a href="category.html">Popular</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="wi-fi.html" class="menu__link">
+						Wi-Fi QR Code Generator
+					</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+
+	<div class="panel__wrapper">
+		<form class="console">
+			<div class="console__top">
+				<div class="console__title">		
+					Settings
+				</div>
+				<button class="btn" type="submit">
+					Save
+				</button>
+			</div>
+			<div class="settings">
+				<div class="settings__bl">
+					<div class="console__title">
+						Establishment Base Info
+					</div>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								Name Restaurant
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input error-input" placeholder="Name">
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Contact Phone
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Phone">
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Email Adress
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Email">
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Password
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						Address Details
+					</div>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								Country
+							</div>
+							<div class="settings__input">
+								<select class="select j-select input">
+									<option>USA</option>
+									<option>Russia</option>
+									<option>Ukraine</option>
+									<option>Poland</option>
+								</select>
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Address
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Full address">
+							</div>
+						</div>
+					</div>
+					<div class="settings__btns">
+						<button class="btn" type="submit">
+							Save
+						</button>
+						<a href="menu.html" class="btn btn--border2">
+							Go to menu
+						</a>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						Google Map
+					</div>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								URL
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Paste a link to your Google Business here">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						QR Code
+					</div>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								URL
+							</div>
+							<div class="settings__input j-copy-wrapper">
+								<div class="row">
+									<input type="text" class="input j-copy-input" placeholder="URL link here" disabled value="https://prnt.sc/w4y7i6">
+									<div class="col">
+										<div class="j-tooltip tooltip">
+											Скопировано
+										</div>
+										<div class="btn j-copy">
+											Copy
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings__code">
+							<div class="settings__code-img j-lazy" data-src="img/qr-logo1.png">
+								<img src="img/code.png" alt="">
+							</div>
+							<a href="#success" class="settings__code-btn">
+								Download as SVG
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal create-cat delete-cat" id="delete">
+		<div class="modal__inner">
+			<div class="modal__title">
+				Domain name is already taken
+			</div>
+			<div class="delete-cat__btns">
+				<div class="delete-cat__btns-col">
+					<a href="#" class="btn" data-fancybox-close>
+						Close
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="modal create-cat" id="help">
+        <div class="modal__inner">
+            <div class="modal__title">
+                Help
+            </div>
+            <div class="input-wrapper">
+                <label class="label">
+                    <div class="label__title">
+                        Email
+                    </div>
+                    <input type="text" class="input" required="" autocomplete="off" placeholder="Your email">
+                </label>
+                <label class="label">
+                    <div class="label__title">
+                        Message
+                    </div>
+                    <textarea rows="5" class="input" placeholder="Your message"></textarea>
+                </label>
+                <button type="submit" class="btn">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/underscore.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.plugins.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="libs/jquery.fancybox.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script src="libs/jquery.nice-select.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

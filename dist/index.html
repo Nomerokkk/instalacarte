@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Instalacarte</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=1200">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="alternate" href="http://example.com/" hreflang="x-default" />
+
+	<link rel="stylesheet" href="libs/normalize.css">
+	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta property="og:title" content="Free contactless QR menu and ordering for restaurants | Instalacarte"/>
+	<meta property="og:description" content="Upgrade your restaurant with a contactless QR menu and cloud based ordering. Great customer experience and no waiting means more returning clients and less waiters."/>
+	<meta property="og:image" content="img/facebook-logo.jpg"/>
+</head>
+<body>
+	<!--HEADER-->
+	<header class="header j-header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__info1">
+					<a href="/" class="header__logo">
+						<img src="img/logo-home.png" alt="">
+					</a>
+					<div class="header__title">
+						Restaurants
+					</div>
+				</div>	
+				<div class="header__info2">
+					<a href="mailto:instalacarte@gmail.com" class="header__email">
+						hello@instalacarte.com
+					</a>
+					<div class="lang">
+						<div class="lang__title">
+							English
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									Русский
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Poland
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<a href="#login" class="btn" data-fancybox-my>
+						<svg>
+							<use xlink:href="img/qr-code.svg#icon"/>
+						</svg>
+						Create menu
+					</a>
+				</div>		
+			</div>
+		</div>
+	</header>
+
+<!--BANNER-->
+	<div class="banner">
+		<div class="container">
+			<div class="banner__wrapper">
+				<div class="banner__img j-lazy" data-src="img/banner__img.png"></div>
+				<div class="banner__img3 j-lazy" data-src="img/banner__img3.png"></div>
+				<div class="banner__icon2 j-lazy" data-src="img/banner__icon.svg"></div>
+				<div class="banner__icon">
+					<svg>
+						<use xlink:href="img/qr-code.svg#icon"/>
+					</svg>
+				</div>
+				<div class="banner__item">
+					<div class="banner__title">
+						Take Photos of Dishes
+					</div>
+					<div class="banner__desc">
+						Make a nice image of every menu item. Your clients will see photos when they browse the menu.
+					</div>
+					<div class="banner__step">
+						Step 1
+					</div>
+				</div>
+				<div class="banner__item banner__item--gradient">
+					<div class="banner__img2 j-lazy" data-src="img/banner__img2.png"></div>
+					<div class="banner__title">
+						Easy Menu Upload
+					</div>
+					<div class="banner__desc">
+						Upload images, descriptions and prices for every menu item. A unique QR code will be generated for your restaurant.
+					</div>
+					<a href="https://instalacarte.com/m/en/WAGAMAMA" class="banner__btn">
+						<div class="btn">
+							Scan demo menu
+						</div>
+						<div class="banner__code j-lazy" data-src="img/banner__code.svg"></div>
+					</a>
+					<div class="banner__step">
+						Step 2
+					</div>
+					<div class="banner__arrow banner__arrow--left">
+						<svg>
+							<use xlink:href="img/arrow.svg#icon"/>
+						</svg>
+					</div>
+					<div class="banner__arrow banner__arrow--right">
+						<svg>
+							<use xlink:href="img/arrow.svg#icon"/>
+						</svg>
+					</div>
+				</div>
+				<div class="banner__item">
+					<div class="banner__title">
+						Scan QR Code & Browse Menu
+					</div>
+					<div class="banner__desc">
+						Print and place QR code on each table. Customers scan the QR code and browse the menu.
+					</div>
+					<div class="banner__step">
+						Step 3
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--NEWS-->
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="news__item">
+						<div class="news__img">
+							<img class="j-lazy" data-src="img/news1.jpg" alt="">
+						</div>
+						<div class="news__text">
+							<div class="news__title">
+								Build a contactless menu for your restaurant. It is easy and free
+							</div>
+							<div class="news__desc">
+								Make your restaurant a safe place to eat by deploying a touch-free QR Code smart  menu. Offer a smart contactless menu to your customers, visible on their smartphone.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="news__item">
+						<div class="news__img">
+							<img class="j-lazy" data-src="img/news2.jpg" alt="">
+						</div>
+						<div class="news__text">
+							<div class="news__title">
+								Contactless is the new normal
+							</div>
+							<div class="news__desc">
+								Choose Instalacarte QR Code smart menu for COVID compliant operation. The smart menu of your restaurant is stored in secured datacenter and accessible online through a QR Code.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="news__item">
+						<div class="news__img">
+							<img class="j-lazy" data-src="img/news3.jpg" alt="">
+						</div>
+						<div class="news__text">
+							<div class="news__title">
+								How does a contactless menu work?
+							</div>
+							<div class="news__desc">
+								Create and place a contactless QR Code menu at counters, tables, or doors. Smartphone users point their camera at the QR Code until a notification pops up. Tapping the notification opens up your menu.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="news__item">
+						<div class="news__img">
+							<img class="j-lazy" data-src="img/news4.jpg" alt="">
+						</div>
+						<div class="news__text">
+							<div class="news__title">
+								The COVID19 crisis makes it necessary to set up contactless menus 
+							</div>
+							<div class="news__desc">
+								A smart menu available online and accessible through a QR code that restaurant owners can easily update at any time.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--TICKS-->
+	<div class="ticks">
+		<div class="container">
+			<div class="title-sec">
+				Instalacarte ticks all the right boxes
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks1.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks1-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								Safety first
+							</div>
+							<div class="ticks__desc">
+								Limiting the use of physical menus and promoting touchless QR Code smart menus reduces the risk of virus transmission, and keeps your customers and employees safe.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks2.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks2-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								Free of charge
+							</div>
+							<div class="ticks__desc">
+								No need to wait days and pay expensive fees to put your menu online and create a QR Code. It is available now, free of charge. Why not try it?
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks3.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks3-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								Data Security
+							</div>
+							<div class="ticks__desc">
+								Your menu data is safely stored and regularly backed up in the state of the art  cloud storage datacenter.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks4.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks4-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								Instalacarte: Capture. Upload. QR-ready
+							</div>
+							<div class="ticks__desc">
+								Use our smart menu editor to quickly put together a digital menu in less than an hour. It is that simple.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks5.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks5-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								Update your menu anytime
+							</div>
+							<div class="ticks__desc">
+								Change your menu in real-time you will never have to reprint a new QR Code. Be free to modify your menus 24 hours a day. Change the menu, while keeping the same QR Code.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks6.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks6-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								Menu in multiple languages, with one QR Code
+							</div>
+							<div class="ticks__desc">
+								Communicate with diners in their preferred language. Instalacarte delivers smart menus in various languages.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks7.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks7-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								Different menus with the same QR Code
+							</div>
+							<div class="ticks__desc">
+								Display pancakes and eggs for breakfast; salads, sandwiches, steaks for lunch. Use a single QR Code to switch between menus seamlessly.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks8.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks8-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								No App download required
+							</div>
+							<div class="ticks__desc">
+								Scanning a QR Code menu doesn't require a third-part app. Your customers can scan the QR Code using their phone's camera and access and browse smart menu
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="ticks__item">
+						<div class="ticks__icon">
+							<div class="ticks__icon-relative">
+								<img src="img/ticks9.svg" alt="">
+							</div>
+							<div class="ticks__icon-absolute">
+								<img src="img/ticks9-h.svg" alt="">
+							</div>
+						</div>
+						<div class="ticks__text">
+							<div class="ticks__title">
+								Inspires the confidence to eat out
+							</div>
+							<div class="ticks__desc">
+								Re-align your restaurant with contactless technology. This gives your customers and employees the confidence to walk-in and enjoy a risk-free time.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--BUILD-->
+	<div class="build j-lazy" data-src="img/build.jpg">
+		<div class="container">
+			<div class="title-sec">
+				Build Your QR code Contactless Menu Now
+			</div>
+			<a href="#login" class="btn btn--white" data-fancybox-my>
+				<svg>
+					<use xlink:href="img/qr-code.svg#icon"/>
+				</svg>
+				<span>
+					Create menu
+				</span>
+			</a>
+		</div>
+	</div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="header__logo">
+                    <img src="img/logo-home.png" alt="">
+                </div>
+                <div class="footer__copyright">
+                    © 2020 Insatalarte. All Right Recieved
+                </div>
+                <div class="footer__info">
+                    <a href="privacy.html" class="footer__policy">
+                        Политика конфиденциальности
+                    </a>
+                    <div class="footer__up j-up">
+                        <svg>
+                            <use xlink:href="img/arrow.svg#icon"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--LOGIN-->
+    <div class="modal login" id="login">
+        <form action="establishment.html">
+            <div class="modal__inner">
+                <div class="modal__title">
+                    Please, Login
+                </div>
+                <div class="login__google">
+                    Google
+                    <img src="img/google.svg" alt="">
+                </div>
+                <div class="login__facebook">
+                    Facebook
+                    <img src="img/facebook.svg" alt="">
+                </div>
+                <div class="login__or">
+                    <span>or</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" placeholder="E-mail" class="input" required autocomplete="off">
+                    <input type="password" placeholder="Password" class="input" autocomplete="off">
+                </div>
+                <div class="login__recaptcha">
+                    <img src="img/googlerec.jpg" alt="">
+                </div>
+                <button type="submit" class="btn">
+                    Log in
+                </button>
+            </div>
+            <div class="login__bottom">
+                <a href="#">
+                    Forgot Password?
+                </a>
+                <a href="#register" data-fancybox-my>
+                    Sign up
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <!--REGISTER-->
+    <div class="modal login" id="register">
+        <form action="establishment.html">
+            <div class="modal__inner">
+                <div class="modal__title">
+                    Sign Up
+                </div>
+                <div class="login__google">
+                    Google
+                    <img src="img/google.svg" alt="">
+                </div>
+                <div class="login__facebook">
+                    Facebook
+                    <img src="img/facebook.svg" alt="">
+                </div>
+                <div class="login__or">
+                    <span>or</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" placeholder="E-mail" class="input" required autocomplete="off">
+                    <input type="password" placeholder="Password" class="input" autocomplete="off">
+                </div>
+                <div class="login__recaptcha">
+                    <img src="img/googlerec.jpg" alt="">
+                </div>
+                <button type="submit" class="btn">
+                    Log in
+                </button>
+            </div>
+            <div class="login__bottom login__bottom--center">
+                <a href="#login" data-fancybox-my>
+                    I have account
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <!--SUCCESS-->
+    <div class="modal create-cat delete-cat" id="success">
+        <div class="modal__inner">
+            <div class="modal__title">
+                You Have Successfully Registered
+            </div>
+            <div class="modal__desc">
+                Welcome to our system Instacarte
+            </div>
+            <div class="delete-cat__btns">
+                <div class="delete-cat__btns-col">
+                    <a href="#login" class="btn" data-fancybox-my>
+                        Enter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/underscore.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.plugins.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="libs/jquery.fancybox.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script src="libs/jquery.nice-select.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
+

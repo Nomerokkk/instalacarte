@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('StratosLCWeb-Light.eot');
+    src: local('Stratos LC Web Light'), local('StratosLCWeb-Light'),
+        url('StratosLCWeb-Light.eot?#iefix') format('embedded-opentype'),
+        url('StratosLCWeb-Light.woff2') format('woff2'),
+        url('StratosLCWeb-Light.woff') format('woff'),
+        url('StratosLCWeb-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('StratosLCWeb-Bold.eot');
+    src: local('Stratos LC Web Bold'), local('StratosLCWeb-Bold'),
+        url('StratosLCWeb-Bold.eot?#iefix') format('embedded-opentype'),
+        url('StratosLCWeb-Bold.woff2') format('woff2'),
+        url('StratosLCWeb-Bold.woff') format('woff'),
+        url('StratosLCWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('StratosLCWeb-Medium.eot');
+    src: local('Stratos LC Web Medium'), local('StratosLCWeb-Medium'),
+        url('StratosLCWeb-Medium.eot?#iefix') format('embedded-opentype'),
+        url('StratosLCWeb-Medium.woff2') format('woff2'),
+        url('StratosLCWeb-Medium.woff') format('woff'),
+        url('StratosLCWeb-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('StratosLCWeb-Regular.eot');
+    src: local('Stratos LC Web'), local('StratosLCWeb-Regular'),
+        url('StratosLCWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('StratosLCWeb-Regular.woff2') format('woff2'),
+        url('StratosLCWeb-Regular.woff') format('woff'),
+        url('StratosLCWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

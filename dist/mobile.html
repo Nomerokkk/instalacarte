@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurants Name</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link rel="stylesheet" href="libs/normalize.css">
+	<link rel="stylesheet" href="libs/animate.min.css">
+	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/mobile-style.css">
+
+	<meta property="og:title" content="Instalacarte"/>
+	<meta property="og:description" content="How much does culture influence creative thinking?"/>
+	<meta property="og:image" content="img/facebook-logo.jpg"/>
+</head>
+<body>
+	<div class="wrapper j-wrapper">
+		<div class="wrapper__inner j-inner">
+			<div class="header-fixed j-header">
+				<header class="header">
+					<div class="container">
+						<div class="header__wrapper">
+							<div class="header__title">
+								Testing restaurant
+							</div>
+							<div class="header__info">
+								<div class="sort j-sort">
+									<ul>
+										<li>
+											<a href="" class="sort__item vert active">
+												<img src="img-mobile/sort1.png" style="width: 21px;height: 14px;" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="gor" class="sort__item gor">
+												<img src="img-mobile/sort2.png" style="width: 15px;height: 19px;" alt="">
+											</a>										
+										</li>
+										<li>
+											<a href="list" class="sort__item list">
+												<img src="img-mobile/sort3.svg" style="width: 18px;height: 12px;" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="search-btn" data-target="#search">
+									<svg>
+										<use xlink:href="img-mobile/search.svg#icon"/>
+									</svg>
+								</div>
+								<div class="lang j-data-target-wrapper" data-target>
+									<div class="lang__title">
+										Język polski
+									</div>
+									<ul>
+										<li>
+											<a href="#">
+												Русский
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												Poland
+											</a>
+										</li>
+										<li>
+											<a href="#">												
+                                                Portuguesa
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<form class="search j-data-target-wrapper" id="search">
+					<div class="container">
+						<div class="search__wrapper">
+							<input type="text" placeholder="Search the dish">
+							<div class="search__close j-search-close">
+								<svg>
+									<use xlink:href="img-mobile/close.svg#icon"/>
+								</svg>
+							</div>	
+						</div>
+					</div>
+				</form>
+
+				<div class="cat">
+					<div class="container">
+						<div class="cat__slider j-slider">
+							<div class="cat__wrapper j-slider-wrapper">
+								<div class="cat__slide j-cat-item active">
+									<a href="#" class="cat__item">
+										<div class="cat__ball j-ball"></div>
+										<div class="cat__img">
+											<img src="img-mobile/popular.png" alt="">
+										</div>
+										<div class="cat__title">Популярное</div> 
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#x1F496;
+										</div>
+										<div class="cat__title">Избранное</div> 
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#127818;
+										</div>
+										<div class="cat__title">Starter</div> 
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#x1F349;
+										</div>
+										<div class="cat__title">Apetiser</div> 
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#127849;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div><div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+								<div class="cat__slide j-cat-item">
+									<a href="#" class="cat__item">
+										<div class="cat__img">
+											&#129369;
+										</div>
+										<div class="cat__title">Main Course</div>  
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main">
+				<div class="container">
+					<div class="main__top disabled">
+						<div class="title category__item">
+							<div class="title__img">
+								<img src="img/icon1.svg" alt="">
+							</div>
+							Starters 
+						</div>
+						<div class="category__item fadeInRight animated">
+							<a href="#" class="category__link">
+								Seafood
+							</a>
+						</div>
+						<div class="category__item fadeInRight animated">
+							<a href="#" class="category__link active">
+								Meat
+							</a>
+						</div>
+						<div class="category__item fadeInRight animated">
+							<a href="#" class="category__link">
+								Seafood
+							</a>
+						</div>
+						<div class="category__item fadeInRight animated">
+							<a href="#" class="category__link">
+								Meat
+							</a>
+						</div>
+						<div class="category__item fadeInRight animated">
+							<a href="#" class="category__link">
+								Seafood
+							</a>
+						</div>
+						<div class="category__item fadeInRight animated">
+							<a href="#" class="category__link">
+								Meat
+							</a>
+						</div>
+						<div class="category__item fadeInRight animated">
+							<a href="#" class="category__link">
+								Seafood
+							</a>
+						</div>
+						<div class="category__item fadeInRight animated">
+							<a href="#" class="category__link">
+								Seafood
+							</a>
+						</div>
+					</div>
+					<div class="products">
+						<div class="products__item j-product-item-wrap fadeInUp animated">
+							<div class="products__link">
+								<div class="products__like j-like">
+									<svg>
+										<use xlink:href="img-mobile/like.svg#icon"/>
+									</svg>
+									<svg class="active-like">
+										<use xlink:href="img-mobile/like2.svg#icon"/>
+									</svg>
+								</div>
+								<div class="products__img j-product-item">
+									<img src="img/default-img.jpg" alt="">
+								</div>
+								<div class="products__text j-product-item">
+									<div class="products__title">
+										MeatNudlesNameLargeHereTitle
+									</div>
+									
+									<div class="products__desc">
+										A smart menu available online and accessible through a QR code that restaurant owners can easily update. A smart menu available online and accessible through...
+									</div>
+									<div class="products__price">8.80€</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item j-product-item-wrap fadeInUp animated">
+							<div class="products__link">
+								<div class="products__like j-like">
+									<svg>
+										<use xlink:href="img-mobile/like.svg#icon"/>
+									</svg>
+									<svg class="active-like">
+										<use xlink:href="img-mobile/like2.svg#icon"/>
+									</svg>
+								</div>
+								<div class="products__img j-product-item">
+									<img src="img-mobile/product.jpg" alt="">
+								</div>
+								<div class="products__text j-product-item">
+									<div class="products__title">
+										MeatNudlesNameLargeHereTitle
+									</div>
+									
+									<div class="products__desc">
+										A smart menu available online and accessible through a QR code that restaurant owners can easily update. A smart menu available online and accessible through...
+									</div>
+									<div class="products__price">8.80€</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item j-product-item-wrap fadeInUp animated">
+							<div class="products__link">
+								<div class="products__like j-like">
+									<svg>
+										<use xlink:href="img-mobile/like.svg#icon"/>
+									</svg>
+									<svg class="active-like">
+										<use xlink:href="img-mobile/like2.svg#icon"/>
+									</svg>
+								</div>
+								<div class="products__img j-product-item">
+									<img src="img-mobile/product.jpg" alt="">
+								</div>
+								<div class="products__text j-product-item">
+									<div class="products__title">
+										MeatNudlesNameLargeHereTitle
+									</div>
+									
+									<div class="products__desc">
+										A smart menu available online and accessible through a QR code that restaurant owners can easily update. A smart menu available online and accessible through...
+									</div>
+									<div class="products__price">8.80€</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item j-product-item-wrap fadeInUp animated">
+							<div class="products__link">
+								<div class="products__like j-like">
+									<svg>
+										<use xlink:href="img-mobile/like.svg#icon"/>
+									</svg>
+									<svg class="active-like">
+										<use xlink:href="img-mobile/like2.svg#icon"/>
+									</svg>
+								</div>
+								<div class="products__img j-product-item">
+									<img src="img-mobile/product.jpg" alt="">
+								</div>
+								<div class="products__text j-product-item">
+									<div class="products__title">
+										MeatNudlesNameLargeHereTitle
+									</div>
+									
+									<div class="products__desc">
+										A smart menu available online and accessible through a QR code that restaurant owners can easily update. A smart menu available online and accessible through...
+									</div>
+									<div class="products__price">8.80€</div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item j-product-item-wrap fadeInUp animated">
+							<div class="products__link">
+								<div class="products__like j-like">
+									<svg>
+										<use xlink:href="img-mobile/like.svg#icon"/>
+									</svg>
+									<svg class="active-like">
+										<use xlink:href="img-mobile/like2.svg#icon"/>
+									</svg>
+								</div>
+								<div class="products__img j-product-item">
+									<img src="img-mobile/product.jpg" alt="">
+								</div>
+								<div class="products__text j-product-item">
+									<div class="products__title">
+										MeatNudlesNameLargeHereTitle
+									</div>
+									
+									<div class="products__desc">
+										A smart menu available online and accessible through a QR code that restaurant owners can easily update. A smart menu available online and accessible through...
+									</div>
+									<div class="products__price">8.80€</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal j-modal">
+				<div class="modal__img j-modal-img">
+					<div class="modal__close j-close">
+						<svg>
+							<use xlink:href="img/arrow.svg#icon"/>
+						</svg>
+					</div>
+					<div class="products__like modal__like j-like">
+						<svg>
+							<use xlink:href="img-mobile/like.svg#icon"></use>
+						</svg>
+						<svg class="active-like">
+							<use xlink:href="img-mobile/like2.svg#icon"/>
+						</svg>
+					</div>
+					<img src="img-mobile/product.jpg" alt="">
+					
+				</div>
+				<div class="modal__text">
+					<div class="modal__title">
+						<span>Meat Nudles Name Large  Here Title Meat Nudles Name Large  Here Title</span>
+						<div class="modal__price">8.80€</div>
+					</div>
+					<div class="modal__desc">
+						A smart menu available online and accessible through a QR code that restaurant owners can easily update. A smart menu available online and accessible through...
+					</div>
+					<div class="label">
+						<div class="label__title">
+							Cola
+						</div>
+						<label class="check active">
+							<input type="radio" name="check1" checked>
+							<div class="check__inner">
+								<div class="check__title">
+									<span></span>
+									Sugar
+								</div>
+								<div class="check__price">
+									+
+									8.80€
+								</div>
+							</div>
+						</label>
+						<label class="check">
+							<input type="radio" name="check1">
+							<div class="check__inner">
+								<div class="check__title">
+									<span></span>
+									Without Sugar
+								</div>
+								<div class="check__price">
+									+
+									8.80€
+								</div>
+							</div>
+						</label>
+						<label class="check">
+							<input type="radio" name="check1">
+							<div class="check__inner">
+								<div class="check__title">
+									<span></span>
+									Sugar 10%
+								</div>
+								<div class="check__price">
+									+
+									8.80€
+								</div>
+							</div>
+						</label>
+					</div>
+					<div class="label">
+						<div class="label__title">
+							Bread
+						</div>
+						<label class="check">
+							<input type="checkbox" name="check2" checked>
+							<div class="check__inner">
+								<div class="check__title">
+									<span class="square"></span>
+									White
+								</div>
+								<div class="check__price">
+									
+								</div>
+							</div>
+						</label>
+						<label class="check">
+							<input type="checkbox" name="check2">
+							<div class="check__inner">
+								<div class="check__title">
+									<span class="square"></span>
+									Black
+								</div>
+								<div class="check__price">
+									+
+									8.80€
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/wow.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.plugins.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="libs/jquery.fancybox.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script src="js/common-mobile.js"></script>
+</body>
+</html>
