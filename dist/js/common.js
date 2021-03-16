@@ -177,8 +177,6 @@ $('.j-copy').on('click', function() {
 
 
 /************LOADER**********/
-//var instance = $('.j-loader').scheletrone();
-
-	$(window).on('load', function() {
-		$('.j-load-item').removeClass('j-load-item');
-	})
+$(window).on('load', function() {
+	$('.j-load-item').removeClass('j-load-item');
+})

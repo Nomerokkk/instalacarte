@@ -25,7 +25,7 @@
 	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	
-    <link rel="alternate" href="http://example.com/" hreflang="x-default" />
+    <link rel="alternate" href="https://instalacarte.com" hreflang="en" />
 
 	<link rel="stylesheet" href="libs/normalize.css">
 	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
@@ -86,12 +86,12 @@
 		<div class="menu">
 			<ul class="menu__list">
 				<li>
-					<a href="establishment.html" class="menu__link active">
+					<a href="establishment.html" class="menu__link ">
 						Business info
 					</a>
 				</li>
-				<li>
-					<div class="menu__link menu__link--parent" data-target="#menu1">
+				<li class="active">
+					<div class="menu__link menu__link--parent active" data-target="#menu1">
 						<a href="menu.html">
 							Menu
 						</a>
@@ -101,18 +101,13 @@
 							</svg>
 						</span>
 					</div>
-					<ul id="menu1">
+					<ul id="menu1" class="active">
 						<li><a href="category.html">Starters</a></li>
-						<li><a href="category.html">Salads</a></li>
+						<li><a href="category.html" class="active">Salads</a></li>
 						<li><a href="category.html">Meat</a></li>
 						<li><a href="category.html">Deserts</a></li>
 						<li><a href="category.html">Popular</a></li>
 					</ul>
-				</li>
-				<li>
-					<a href="wi-fi.html" class="menu__link">
-						Wi-Fi QR Code Generator
-					</a>
 				</li>
 			</ul>			
 		</div>
@@ -164,17 +159,7 @@
 										<img src="img/default-img.jpg" alt="">
 									</div>
 									<div class="cat-page-content__title">
-										Name Large Here
-										<label class="menu-info__check">
-											<div class="menu-info__title">
-												Off
-											</div>
-											<input type="checkbox" checked>
-											<div class="menu-info__btn"></div>
-											<div class="menu-info__title">
-												On
-											</div>
-										</label>
+										Name Large Here	
 									</div>
 									<div class="cat-page-content__price">
 										45
@@ -266,12 +251,22 @@
 										</div>
 									</div>
 									<div class="cat-page-content__bottom menu-info">
-										<label class="menu-info__check">
+										<label class="menu-info__check cat-page-content__bottom-popular">
 											<div class="menu-info__title">
 												Popular
 											</div>
 											<input type="checkbox" checked>
 											<div class="menu-info__btn"></div>
+										</label>
+										<label class="menu-info__check cat-page-content__bottom-onoff">
+											<div class="menu-info__title">
+												Off
+											</div>
+											<input type="checkbox" checked>
+											<div class="menu-info__btn"></div>
+											<div class="menu-info__title">
+												On
+											</div>
 										</label>
 										<div class="cat-page-content__bottom-btns">
 											<div class="menu-info__btn">
@@ -283,150 +278,6 @@
 											<div class="menu-info__btn menu-info__btn--delete" data-fancybox data-src="#delete">
 												Delete
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="cat-page__item j-load-item">
-					<div class="cat-page__top">
-						<div class="cat-page__title" data-target="#ac2">
-							<div class="cat-page__arrow j-load-el">
-								<svg>
-									<use xlink:href="img/arrow.svg#icon"/>
-								</svg>
-							</div>
-							<div class="j-load-el">Meat</div>
-						</div>
-						<div class="cat-page__info menu-info">
-							<a href="#new-item" class="cat-page__btn btn j-load-el" data-fancybox-my="">
-								New item
-							</a>
-							<div class="menu-info__btn j-load-el">
-								<svg>
-									<use xlink:href="img/edit.svg#icon"/>
-								</svg>
-								Edit
-							</div>
-							<div class="menu-info__btn menu-info__btn--delete j-load-el" data-fancybox data-src="#delete">
-								Delete
-							</div>
-						</div>
-					</div>
-					<div class="cat-page-content" id="ac2">
-						<div class="row">
-							<div class="col">
-								<div class="cat-page-content__item j-load-item">
-									<div class="cat-page-content__img j-load-el">
-										<img src="img/cat-page-content.jpg" alt="">
-									</div>
-									<div class="cat-page-content__title">
-										Name Large Here
-									</div>
-									<div class="cat-page-content__price">
-										45
-									</div>
-									<div class="cat-page-content__desc">
-										Only latin symbols in lowacarse, numbers, dash (-) and underscrore (_) e.g. kitchen
-									</div>
-									<div class="cat-page-content__etc">
-										<div class="cat-page-content__main-title">
-											Choice:
-										</div>
-										<div class="cat-page-content__etc-bl">
-											<div class="cat-page-content__etc-title">
-												Cola
-											</div>
-											<div class="cat-page-content__flex">
-												<ul>
-													<li>
-														<div>
-															SugarHigh quality
-														</div>
-														<div class="cat-page-content__etc-price">
-															+ 8.80€
-														</div>
-													</li>
-													<li>
-														<div>
-															Without Sugar
-														</div>
-														<div class="cat-page-content__etc-price">
-															+ 8.80€
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="cat-page-content__etc-bl">
-											<div class="cat-page-content__etc-title">
-												Bread
-											</div>
-											<div class="cat-page-content__flex">
-												<ul>
-													<li>
-														<div>
-															Sugar
-														</div>
-														<div class="cat-page-content__etc-price">
-															+ 8.80€
-														</div>
-													</li>
-													<li>
-														<div>
-															Without Sugar
-														</div>
-														<div class="cat-page-content__etc-price">
-															+ 8.80€
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="cat-page-content__main-title">
-											Addon:
-										</div>
-										<div class="cat-page-content__etc-bl">
-											<div class="cat-page-content__etc-title">
-												Bread
-											</div>
-											<div class="cat-page-content__flex">
-												<ul>
-													<li>
-														<div>
-															Sugar
-														</div>
-														<div class="cat-page-content__etc-price">
-															+ 8.80€
-														</div>
-													</li>
-													<li>
-														<div>
-															Without Sugar
-														</div>
-														<div class="cat-page-content__etc-price">
-															+ 8.80€
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="cat-page-content__bottom menu-info">
-										<label class="menu-info__check">
-											<input type="checkbox" checked>
-											<div class="menu-info__btn"></div>
-										</label>
-										<div class="menu-info__btn">
-											<svg>
-												<use xlink:href="img/edit.svg#icon"/>
-											</svg>
-											Edit
-										</div>
-										<div class="menu-info__btn menu-info__btn--delete" data-fancybox data-src="#delete">
-											Delete
 										</div>
 									</div>
 								</div>
@@ -810,7 +661,7 @@
                     <div class="label__title">
                         Message
                     </div>
-                    <textarea rows="5" class="input" placeholder="Your message"></textarea>
+                    <textarea rows="5" class="input" placeholder="How we can help?"></textarea>
                 </label>
                 <button type="submit" class="btn">
                     Send
