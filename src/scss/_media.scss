@@ -1,0 +1,38 @@
+@media all and (max-width: 1900px) {
+    .cat-page-content {
+        .col {
+            width: 33.333%;
+        }
+    }
+}
+
+@media all and (max-width: 1600px) {
+    .panel {
+        &__wrapper {
+            padding-left: 270px;
+            padding-top: 110px;
+        }
+    }
+    
+    .menu-page {
+        &__bl {
+            width: 33.333%;
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+
+}
+
+@media all and (max-width: 992px) {
+	
+}
+
+@media all and (max-width: 767px) {
+	
+}
+
+@media all and (max-width: 479px) {
+	
+}

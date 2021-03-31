@@ -1,0 +1,158 @@
+@@include('./templates/header-admin.html', {
+	"name": "Business info"
+})
+
+	<div class="panel__wrapper">
+		<form class="console">
+			<div class="console__top">
+				<div class="console__title">		
+					Settings
+				</div>
+				<button class="btn" type="submit">
+					Save
+				</button>
+			</div>
+			<div class="settings">
+				<div class="settings__bl">
+					<div class="console__title">
+						Establishment Base Info
+					</div>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								Name Restaurant
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input error-input" placeholder="Name">
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Contact Phone
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Phone">
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Email Adress
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Email">
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Password
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						Address Details
+					</div>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								Country
+							</div>
+							<div class="settings__input">
+								<select class="select j-select input">
+									<option>USA</option>
+									<option>Russia</option>
+									<option>Ukraine</option>
+									<option>Poland</option>
+								</select>
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Address
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Full address">
+							</div>
+						</div>
+					</div>
+					<div class="settings__btns">
+						<button class="btn" type="submit">
+							Save
+						</button>
+						<a href="menu.html" class="btn btn--border2 active">
+							Go to menu
+						</a>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						Google Map
+					</div>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								URL
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Paste a link to your Google Business here">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						QR Code
+					</div>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								URL
+							</div>
+							<div class="settings__input j-copy-wrapper">
+								<div class="row">
+									<input type="text" class="input j-copy-input" placeholder="URL link here" disabled value="https://prnt.sc/w4y7i6">
+									<div class="col">
+										<div class="j-tooltip tooltip">
+											Скопировано
+										</div>
+										<div class="btn j-copy">
+											Copy
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="settings__code">
+							<div class="settings__code-img j-lazy" data-src="img/qr-logo1.png">
+								<img src="img/code.png" alt="">
+							</div>
+							<a href="#success" class="settings__code-btn">
+								Download as SVG
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal create-cat delete-cat" id="delete">
+		<div class="modal__inner">
+			<div class="modal__title">
+				Domain name is already taken
+			</div>
+			<div class="delete-cat__btns">
+				<div class="delete-cat__btns-col">
+					<a href="#" class="btn" data-fancybox-close>
+						Close
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include('./templates/footer-admin.html')

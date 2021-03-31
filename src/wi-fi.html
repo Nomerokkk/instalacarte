@@ -1,0 +1,59 @@
+@@include('./templates/header-admin.html', {
+	"name": "Wi-Fi"
+})
+
+	<div class="panel__wrapper">
+		<form class="console">
+			<div class="console__top">
+				<div class="console__title">		
+					Wi-Fi QR Code Generation
+				</div>
+				<button class="btn" type="submit">
+					Save
+				</button>
+			</div>
+			<div class="cat-page">
+				<div class="wifi">
+					<div class="wifi__fields">
+						<div class="settings__item">
+							<div class="settings__title">
+								Шифрование
+							</div>
+							<div class="settings__input">
+								<select class="select j-select input">
+									<option>Отсутствует</option>
+									<option>Присутствует</option>
+								</select>
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								SSID
+							</div>
+							<div class="settings__input">
+								<input type="text" class="input" placeholder="Имя сети">
+							</div>
+						</div>
+						<div class="settings__item">
+							<div class="settings__title">
+								Пароль
+							</div>
+							<div class="settings__input">
+								<input type="password" class="input" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="wifi__code">
+						<div class="settings__code-img j-lazy" data-src="img/qr-logo2.png">
+							<img src="img/code.png" alt="">
+						</div>
+						<a href="#" class="settings__code-btn">
+							Download as SVG
+						</a>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+@@include('./templates/footer-admin.html')

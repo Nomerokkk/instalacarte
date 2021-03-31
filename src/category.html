@@ -1,0 +1,537 @@
+@@include('./templates/header-admin.html', {
+	"name": "Category"
+})
+
+	<div class="panel__wrapper">
+		<div class="console">
+			<div class="console__top">
+				<div class="console__title">		
+					<!--<img src="img/icon1.svg" alt="">-->
+					&#129364;
+					Starters
+				</div>
+				<a href="#create-subcategory" class="btn" data-fancybox-my style="width: 194px;">
+					Create Subcategory
+				</a>
+			</div>
+			<div class="cat-page">
+				<div class="cat-page__item j-load-item">
+					<div class="cat-page__top">
+						<div class="cat-page__title" data-target="#ac1">
+							<div class="cat-page__arrow j-load-el">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+							<div class="j-load-el">Meat</div>
+						</div>
+						<div class="cat-page__info menu-info">
+							<a href="#new-item" class="cat-page__btn btn j-load-el" data-fancybox-my="">
+								New item
+							</a>
+							<div class="menu-info__btn j-load-el">
+								<svg>
+									<use xlink:href="img/edit.svg#icon"/>
+								</svg>
+								Edit
+							</div>
+							<div class="menu-info__btn menu-info__btn--delete j-load-el" data-fancybox data-src="#delete">
+								Delete
+							</div>
+						</div>
+					</div>
+					<div class="cat-page-content" id="ac1">
+						<div class="row">
+							<div class="col">
+								<div class="cat-page-content__item j-load-item">
+									<div class="cat-page-content__img j-load-el">
+										<img src="img/default-img.jpg" alt="">
+									</div>
+									<div class="cat-page-content__title">
+										Name Large Here	
+									</div>
+									<div class="cat-page-content__price">
+										45
+									</div>
+									<div class="cat-page-content__desc">
+										Only latin symbols in lowacarse, numbers, dash (-) and underscrore (_) e.g. kitchen
+									</div>
+									<div class="cat-page-content__etc">
+										<div class="cat-page-content__main-title">
+											Choice:
+										</div>
+										<div class="cat-page-content__etc-bl">
+											<div class="cat-page-content__etc-title">
+												Cola
+											</div>
+											<div class="cat-page-content__flex">
+												<ul>
+													<li>
+														<div>
+															SugarHigh quality
+														</div>
+														<div class="cat-page-content__etc-price">
+															+ 8.80€
+														</div>
+													</li>
+													<li>
+														<div>
+															Without Sugar
+														</div>
+														<div class="cat-page-content__etc-price">
+															+ 8.80€
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="cat-page-content__etc-bl">
+											<div class="cat-page-content__etc-title">
+												Bread
+											</div>
+											<div class="cat-page-content__flex">
+												<ul>
+													<li>
+														<div>
+															Sugar
+														</div>
+														<div class="cat-page-content__etc-price">
+															+ 8.80€
+														</div>
+													</li>
+													<li>
+														<div>
+															Without Sugar
+														</div>
+														<div class="cat-page-content__etc-price">
+															+ 8.80€
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="cat-page-content__main-title">
+											Addon:
+										</div>
+										<div class="cat-page-content__etc-bl">
+											<div class="cat-page-content__etc-title">
+												Bread
+											</div>
+											<div class="cat-page-content__flex">
+												<ul>
+													<li>
+														<div>
+															Sugar
+														</div>
+														<div class="cat-page-content__etc-price">
+															+ 8.80€
+														</div>
+													</li>
+													<li>
+														<div>
+															Without Sugar
+														</div>
+														<div class="cat-page-content__etc-price">
+															+ 8.80€
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="cat-page-content__bottom menu-info">
+										<label class="menu-info__check cat-page-content__bottom-popular">
+											<div class="menu-info__title">
+												Popular
+											</div>
+											<input type="checkbox" checked>
+											<div class="menu-info__btn"></div>
+										</label>
+										<label class="menu-info__check cat-page-content__bottom-onoff">
+											<div class="menu-info__title">
+												Off
+											</div>
+											<input type="checkbox" checked>
+											<div class="menu-info__btn"></div>
+											<div class="menu-info__title">
+												On
+											</div>
+										</label>
+										<div class="cat-page-content__bottom-btns">
+											<div class="menu-info__btn">
+												<svg>
+													<use xlink:href="img/edit.svg#icon"/>
+												</svg>
+												Edit
+											</div>
+											<div class="menu-info__btn menu-info__btn--delete" data-fancybox data-src="#delete">
+												Delete
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--CREATE CATEGORY-->
+	<div class="modal create-cat" id="create-subcategory">
+		<form>
+			<div class="modal__inner">
+				<div class="modal__title">
+					New Subcategory
+				</div>
+				<div class="input-wrapper">
+					<label class="label">
+						<div class="label__title">
+							Title
+						</div>
+						<input type="text" class="input" required autocomplete="off" placeholder="Beef or Lamb or Chicken">
+					</label>
+				</div>
+				<button type="submit" class="btn">
+					Create
+				</button>
+			</div>
+		</form>
+	</div>
+
+	<!--NEW ITEM-->
+	<div class="modal new-item" id="new-item">
+		<form>
+			<div class="modal__inner new-item__inner">
+				<div class="modal__title">
+					New Menu Item
+				</div>
+				<div class="row">
+					<div class="col">
+						<label class="new-item__file j-file-wrap">
+							<input type="file" class="j-file">
+							<div class="new-item__file-img">
+								<button type="button" class="fancybox-button fancybox-close-small j-remove-img hide" data-default-img="img/default-img.jpg">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+								</button>
+								<img src="" alt="" class="j-file-img">
+								<div class="new-item__file-text">
+									<svg>
+										<use xlink:href="img/upload.svg#icon"/>
+									</svg>
+									<div>Upload Photo</div>
+								</div>
+							</div>
+						</label>
+						<div class="new-item__popular">
+							<div class="new-item__popular-title">
+								Popular?
+							</div>
+							<div class="new-item__popular-info">
+								No
+								<label class="menu-info__check">
+									<input type="checkbox">
+									<div class="menu-info__btn"></div>
+								</label>
+								Yes
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="input-wrapper">
+							<label class="label">
+								<div class="label__title">
+									Dish name
+								</div>
+								<input placeholder="Big Mac" type="text" class="input" required autocomplete="off">
+							</label>
+							<label class="label">
+								<div class="label__title">
+									Sub name
+								</div>
+								<input placeholder="Two beef patties sandwiched between a bun." type="text" class="input" required autocomplete="off">
+							</label>
+							<select class="select j-select input">
+								<option>Sub-category</option>
+								<option>Meat</option>
+								<option>Salads</option>
+								<option>Meat</option>
+							</select>
+						</div>
+					</div>
+					<div class="col col--margin">
+						<div class="input-wrapper j-repeat-wrapper">
+							<div class="label">
+								<div class="label__title label__title--big">
+									Add-onn
+									<div class="label__add menu-info__btn j-repeat-btn" data-id="#choice2">
+										<svg>
+											<use xlink:href="img/plus.svg#icon"/>
+										</svg>
+										Add 
+									</div>
+								</div>
+											
+								<script type="text/template" id="choice">
+									<div class="j-repeat-wrapper">
+										<div class="j-repeat-fields label__repeat-fields">
+											<div class="label__close j-close">
+												<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+											</div>
+											<label class="label">
+												<div class="label__title">
+													Name
+												</div>
+												<input name="addon_name<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Add a Meal">
+											</label>
+											<div class="label__row">
+												<div class="label__col">
+													<label class="label">
+														<div class="label__title">
+															Options
+														</div>
+														<input name="addon_options<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Medium-Big Meal">
+													</label>
+												</div>
+												<div class="label__col">
+													<label class="label">
+														<div class="label__title">
+															Price
+														</div>
+														<input name="addon_price<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Extra price">
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="label__add-big label__add menu-info__btn j-repeat-btn-opts" data-id="#opt2">
+											<svg>
+												<use xlink:href="img/plus.svg#icon"/>
+											</svg>
+											Add more
+										</div>
+									</div>
+								</script>
+
+								<script type="text/template" id="opt">
+									<div class="j-repeat-fields relative">
+										<div class="label__close j-close-fields">
+											<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+										</div>	
+										<div class="label__row">
+											<div class="label__col">
+												<label class="label">
+													<div class="label__title">
+														Options
+													</div>
+													<input name="addon_options<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Medium-Big Meal">
+												</label>
+											</div>
+											<div class="label__col">
+												<label class="label">
+													<div class="label__title">
+														Price ($)
+													</div>
+													<input name="addon_price<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Extra price">
+												</label>
+											</div>
+										</div>
+									</div>
+								</script>
+
+								<div class="j-repeat-wrapper">
+									<div class="j-repeat-fields label__repeat-fields">
+										<label class="label">
+											<div class="label__title">
+												Name
+											</div>
+											<input name="addon_name" type="text" class="input" required autocomplete="off" placeholder="Add a Meal">
+										</label>
+										<div class="label__row">
+											<div class="label__col">
+												<label class="label">
+													<div class="label__title">
+														Options
+													</div>
+													<input name="addon_options" type="text" class="input" required autocomplete="off" placeholder="Medium-Big Meal">
+												</label>
+											</div>
+											<div class="label__col">
+												<label class="label">
+													<div class="label__title">
+														Price ($)
+													</div>
+													<input name="addon_price" type="text" class="input" required autocomplete="off" placeholder="Extra price">
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="label__add-big label__add menu-info__btn j-repeat-btn-opts" data-id="#opt2">
+										<svg>
+											<use xlink:href="img/plus.svg#icon"/>
+										</svg>
+										Add more
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col col--margin">
+						<div class="input-wrapper j-repeat-wrapper">
+							<div class="label">
+								<div class="label__title label__title--big">
+									Choice
+									<div class="label__add menu-info__btn j-repeat-btn" data-id="#choice2">
+										<svg>
+											<use xlink:href="img/plus.svg#icon"/>
+										</svg>
+										Add 
+									</div>
+								</div>
+											
+								<script type="text/template" id="choice2">
+									<div class="j-repeat-wrapper">
+										<div class="j-repeat-fields label__repeat-fields">
+											<div class="label__close j-close">
+												<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+											</div>
+											<label class="label">
+												<div class="label__title">
+													Name
+												</div>
+												<input name="choice_name<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Size">
+											</label>
+											<div class="label__row">
+												<div class="label__col">
+													<label class="label">
+														<div class="label__title">
+															Options
+														</div>
+														<input name="choice_options<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Big, Small">
+													</label>
+												</div>
+												<div class="label__col">
+													<label class="label">
+														<div class="label__title">
+															Price ($)
+														</div>
+														<input name="choice_price<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Extra price">
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="label__add-big label__add menu-info__btn j-repeat-btn-opts" data-id="#opt2">
+											<svg>
+												<use xlink:href="img/plus.svg#icon"/>
+											</svg>
+											Add more
+										</div>
+									</div>
+								</script>
+
+								<script type="text/template" id="opt2">
+									<div class="j-repeat-fields relative">
+										<div class="label__close j-close-fields">
+											<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+										</div>	
+										<div class="label__row">
+											<div class="label__col">
+												<label class="label">
+													<div class="label__title">
+														Options
+													</div>
+													<input name="choice_options<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Big, Small">
+												</label>
+											</div>
+											<div class="label__col">
+												<label class="label">
+													<div class="label__title">
+														Price ($)
+													</div>
+													<input name="choice_price<%= count %>" type="text" class="input" required autocomplete="off" placeholder="Extra price">
+												</label>
+											</div>
+										</div>
+									</div>
+								</script>
+
+								<div class="j-repeat-wrapper">
+									<div class="j-repeat-fields label__repeat-fields">
+										<label class="label">
+											<div class="label__title">
+												Name
+											</div>
+											<input name="choice_name" type="text" class="input" required autocomplete="off" placeholder="Size">
+										</label>
+										<div class="label__row">
+											<div class="label__col">
+												<label class="label">
+													<div class="label__title">
+														Options
+													</div>
+													<input name="choice_options" type="text" class="input" required autocomplete="off" placeholder="Big, Small">
+												</label>
+											</div>
+											<div class="label__col">
+												<label class="label">
+													<div class="label__title">
+														Price ($)
+													</div>
+													<input name="choice_price" type="text" class="input" required autocomplete="off" placeholder="Extra price">
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="label__add-big label__add menu-info__btn j-repeat-btn-opts" data-id="#opt2">
+										<svg>
+											<use xlink:href="img/plus.svg#icon"/>
+										</svg>
+										Add more
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item__price">
+					<div class="row">
+						<div class="col">
+							<label class="label">
+								<div class="label__title">
+									Price ($)
+								</div>
+								<input type="text" class="input" placeholder="3.99">
+							</label>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn">
+					Create
+				</button>
+			</div>
+		</form>
+	</div>
+
+	<!--DELETE-->
+	<div class="modal create-cat delete-cat" id="delete">
+		<div class="modal__inner">
+			<div class="modal__title">
+				Are you sure to delete Name category?
+			</div>
+			<div class="delete-cat__btns">
+				<div class="delete-cat__btns-col">
+					<a href="#" class="btn">
+						Delete
+					</a>
+				</div>
+				<div class="delete-cat__btns-col">
+					<a href="#" class="btn btn--border" data-fancybox-close>
+						Cancel
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+@@include('./templates/footer-admin.html')

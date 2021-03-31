@@ -1,0 +1,131 @@
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="header__logo">
+                    <img src="img/logo-home.png" alt="">
+                </div>
+                <div class="footer__copyright">
+                    © 2020 Insatalarte. All Right Recieved
+                </div>
+                <div class="footer__info">
+                    <a href="privacy.html" class="footer__policy">
+                        Политика конфиденциальности
+                    </a>
+                    <div class="footer__up j-up">
+                        <svg>
+                            <use xlink:href="img/arrow.svg#icon"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--LOGIN-->
+    <div class="modal login" id="login">
+        <form action="establishment.html">
+            <div class="modal__inner">
+                <div class="modal__title">
+                    Please, Login
+                </div>
+                <div class="login__google">
+                    Google
+                    <img src="img/google.svg" alt="">
+                </div>
+                <div class="login__facebook">
+                    Facebook
+                    <img src="img/facebook.svg" alt="">
+                </div>
+                <div class="login__or">
+                    <span>or</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" placeholder="E-mail" class="input" required autocomplete="off">
+                    <input type="password" placeholder="Password" class="input" autocomplete="off">
+                </div>
+                <div class="login__recaptcha">
+                    <img src="img/googlerec.jpg" alt="">
+                </div>
+                <button type="submit" class="btn">
+                    Log in
+                </button>
+            </div>
+            <div class="login__bottom">
+                <a href="#">
+                    Forgot Password?
+                </a>
+                <a href="#register" data-fancybox-my>
+                    Sign up
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <!--REGISTER-->
+    <div class="modal login" id="register">
+        <form action="establishment.html">
+            <div class="modal__inner">
+                <div class="modal__title">
+                    Sign Up
+                </div>
+                <div class="login__google">
+                    Google
+                    <img src="img/google.svg" alt="">
+                </div>
+                <div class="login__facebook">
+                    Facebook
+                    <img src="img/facebook.svg" alt="">
+                </div>
+                <div class="login__or">
+                    <span>or</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" placeholder="E-mail" class="input" required autocomplete="off">
+                    <input type="password" placeholder="Password" class="input" autocomplete="off">
+                </div>
+                <div class="login__recaptcha">
+                    <img src="img/googlerec.jpg" alt="">
+                </div>
+                <button type="submit" class="btn">
+                    Log in
+                </button>
+            </div>
+            <div class="login__bottom login__bottom--center">
+                <a href="#login" data-fancybox-my>
+                    I have account
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <!--SUCCESS-->
+    <div class="modal create-cat delete-cat" id="success">
+        <div class="modal__inner">
+            <div class="modal__title">
+                You Have Successfully Registered
+            </div>
+            <div class="modal__desc">
+                Welcome to our system Instacarte
+            </div>
+            <div class="delete-cat__btns">
+                <div class="delete-cat__btns-col">
+                    <a href="#login" class="btn" data-fancybox-my>
+                        Enter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/underscore.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
+    <script src="libs/jquery-lazy/jquery.lazy.plugins.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="libs/jquery.fancybox.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script src="libs/jquery.nice-select.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
