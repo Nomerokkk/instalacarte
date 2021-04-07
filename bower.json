@@ -1,0 +1,25 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.maskedinput": "^1.4.1",
+    "jquery": "^3.5.0",
+    "normalize-css": "^8.0.1",
+    "fancybox": "^3.5.7",
+    "animate.css": "^3.7.2",
+    "wow": "^1.1.2",
+    "jquery-lazy": "^1.7.10",
+    "swiper": "^5.3.7"
+  }
+}
