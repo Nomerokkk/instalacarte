@@ -148,7 +148,7 @@ b, strong {
   padding: 0 15px;
 }
 
-.gradient, .btn, .banner__item--gradient, .banner__btn:hover .btn, .banner__arrow, .ticks__item:before, .footer__up, .person:before, .settings__code-btn:hover, .create-cat__radio input:checked + .create-cat__radio-bl .create-cat__radio-img {
+.gradient, .btn, .btn--border2.active:hover, .banner__item--gradient, .banner__btn:hover .btn, .banner__arrow, .ticks__item:before, .footer__up, .person:before, .settings__code-btn:hover, .create-cat__radio input:checked + .create-cat__radio-bl .create-cat__radio-img {
   background: linear-gradient(253.3deg, #FE624C -3.43%, #EC2CA3 119.11%);
 }
 
@@ -423,12 +423,26 @@ b, strong {
   transition: .3s all ease;
 }
 
-.btn--border2:hover, .btn--border2.active {
+.btn--border2:hover {
+  border: 1px solid #E8E8E8;
+  background: #F8F8F8;
+  color: #111224;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: no-drop;
+}
+
+.btn--border2.active {
   border-color: #EC2CA3;
   color: #EC2CA3;
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #F8F8F8;
+  cursor: pointer;
+}
+
+.btn--border2.active:hover {
+  color: #fff;
 }
 
 .banner {
@@ -1790,6 +1804,8 @@ textarea.input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .settings__code-btn:hover {

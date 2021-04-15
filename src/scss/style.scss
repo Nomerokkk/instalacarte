@@ -294,11 +294,23 @@ b, strong {
 		background: #F8F8F8;
 		color: #111224;
 		transition: .3s all ease;
-		&:hover, &.active {
+		&:hover {
+			border: 1px solid #E8E8E8;
+			background: #F8F8F8;
+			color: #111224;
+			box-shadow: none;
+			cursor: no-drop;
+		}
+		&.active {
 			border-color: $red;
 			color: $red;
 			box-shadow: none;
 			background: #F8F8F8;
+			cursor: pointer;
+			&:hover {
+				@extend .gradient;
+				color: #fff;
+			}
 		}
 	}
 }
@@ -1319,6 +1331,7 @@ textarea.input {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			transition: .2s;
 			&:hover {
 				@extend .gradient;
 				color: #fff;

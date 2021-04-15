@@ -423,6 +423,9 @@ b, strong {
         overflow: hidden;
         text-overflow: ellipsis;
         position: relative;
+        width: 86px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     &__img {
         width: 60px;
