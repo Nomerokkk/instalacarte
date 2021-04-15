@@ -148,7 +148,7 @@ b, strong {
   padding: 0 15px;
 }
 
-.gradient, .btn, .banner__item--gradient, .banner__arrow, .ticks__item:before, .footer__up, .person:before, .settings__code-btn:hover, .create-cat__radio input:checked + .create-cat__radio-bl .create-cat__radio-img {
+.gradient, .btn, .banner__item--gradient, .banner__btn:hover .btn, .banner__arrow, .ticks__item:before, .footer__up, .person:before, .settings__code-btn:hover, .create-cat__radio input:checked + .create-cat__radio-bl .create-cat__radio-img {
   background: linear-gradient(253.3deg, #FE624C -3.43%, #EC2CA3 119.11%);
 }
 
@@ -548,6 +548,18 @@ b, strong {
   padding: 5px 10px 15px;
   border-radius: 20px;
   display: block;
+  -webkit-transition: .3s box-shadow;
+  transition: .3s box-shadow;
+}
+
+.banner__btn:hover {
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.banner__btn:hover .btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .banner__btn .btn {

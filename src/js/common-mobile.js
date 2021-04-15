@@ -56,13 +56,15 @@ $(function() {
         var width_container = $slider_container.width(),
             scroll_left_container = $slider_container.scrollLeft(),
             $active_slide = $('.j-cat-item.active'),
-            offset_end = offset - width_container + 150;
+            offset_end;
 
         if($active_slide.index() == 0) {
             var offset = $active_slide.position().left - 3 + scroll_left_container;
         } else {
             var offset = $active_slide.position().left - 4 + scroll_left_container;
         }
+
+        offset_end = offset - width_container + 150;
 
         $ball.css({
             'transform': 'translateX(' + offset + 'px)',
