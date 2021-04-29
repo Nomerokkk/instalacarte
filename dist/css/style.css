@@ -2791,3 +2791,9 @@ textarea.input {
     width: 33.333%;
   }
 }
+
+@media all and (max-width: 1450px) {
+  .cat-page-content .col {
+    width: 50%;
+  }
+}

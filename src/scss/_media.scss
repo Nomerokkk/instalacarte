@@ -21,6 +21,14 @@
     }
 }
 
+@media all and (max-width: 1450px) {
+    .cat-page-content {
+        .col {
+            width: 50%;
+        }
+    }
+}
+
 @media all and (max-width: 1200px) {
 
 }
