@@ -1964,7 +1964,7 @@ textarea.input {
 }
 
 .menu-info__check input:checked + .menu-info__btn:before {
-  margin-left: 10px;
+  margin-left: 0;
   background: #EC2CA3;
 }
 
@@ -1994,7 +1994,7 @@ textarea.input {
   -webkit-transition: .2s all ease;
   transition: .2s all ease;
   display: block;
-  margin-left: 0;
+  margin-left: 10px;
 }
 
 .menu-info__title {
@@ -2407,10 +2407,6 @@ textarea.input {
   margin-right: 5px;
 }
 
-.cat-page-content__bottom-onoff {
-  margin: 0 10px;
-}
-
 .cat-page-content__bottom-onoff .menu-info__btn {
   margin: 0 5px;
 }
@@ -2547,7 +2543,7 @@ textarea.input {
 }
 
 .new-item__popular .menu-info__check {
-  margin: 0 9px;
+  margin: 0;
 }
 
 .new-item__popular .menu-info__btn {
@@ -2794,6 +2790,6 @@ textarea.input {
 
 @media all and (max-width: 1450px) {
   .cat-page-content .col {
-    width: 50%;
+    width: 33.3333%;
   }
 }

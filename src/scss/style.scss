@@ -1443,7 +1443,7 @@ textarea.input {
 			&:checked {
 				+ .menu-info__btn {
 					&:before {
-						margin-left: 10px;
+						margin-left: 0;
 						background: $red;
 					}
 				}
@@ -1467,7 +1467,7 @@ textarea.input {
 				background: rgba(#000, .5);
 				transition: .2s all ease;
 				display: block;
-				margin-left: 0;
+				margin-left: 10px;
 			}
 		}
 	}
@@ -1765,7 +1765,6 @@ textarea.input {
 			}
 		}
 		&-onoff {
-			margin: 0 10px;
 			.menu-info__btn {
 				margin: 0 5px;
 			}
@@ -1874,7 +1873,7 @@ textarea.input {
 			margin-right: 15px;
 		}
 		.menu-info__check {
-			margin: 0 9px;
+			margin: 0;
 		}
 		.menu-info__btn {
 			margin-right: 0;
