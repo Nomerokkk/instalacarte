@@ -1,0 +1,133 @@
+._vue-flash-msg-body {
+    position: fixed;
+    max-width: 450px;
+	width: 100%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+	z-index: 1111;
+	font-size: 19px;
+	z-index: 100000000 !important;
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_unclickabe {
+    cursor: auto
+}
+
+._vue-flash-msg-body._vue-flash-msg-_right-bottom, ._vue-flash-msg-body._vue-flash-msg-_right-top {
+    right: 20px
+}
+
+._vue-flash-msg-body._vue-flash-msg-_left-bottom, ._vue-flash-msg-body._vue-flash-msg-_left-top {
+    left: 20px
+}
+
+._vue-flash-msg-body ._vue-flash-msg-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+._vue-flash-msg-body ._vue-flash-msg-body__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 20%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden
+}
+
+._vue-flash-msg-body ._vue-flash-msg-body__icon img {
+    width: 80%;
+    height: auto
+}
+
+._vue-flash-msg-body ._vue-flash-msg-body__content {
+    padding: 10px 20px;
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_default {
+    color: #000
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_success {
+    border: 1px solid #01947a;
+    background-color: rgba(1, 148, 122, 1) !important;
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_success:hover {
+    background-color: #01947a;
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_success ._vue-flash-msg-body__content {
+    border-left: 5px solid #01947a
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_info {
+    border: 1px solid #1087c2;
+    background-color: rgba(16, 135, 194, .68)
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_info:hover {
+    background-color: #1087c2
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_info ._vue-flash-msg-body__content {
+    border-left: 5px solid #1087c2
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_error {
+    border: 1px solid #f12222;
+    background-color: rgba(241, 34, 34, 1) !important;
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_error:hover {
+    background-color: #f12222
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_error ._vue-flash-msg-body__content {
+    border-left: 5px solid #f12222
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_warning {
+    border: 1px solid #f18b22;
+    background-color: rgba(241, 139, 34, .68)
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_warning:hover {
+    background-color: #f18b22
+}
+
+._vue-flash-msg-body._vue-flash-msg-body_warning ._vue-flash-msg-body__content {
+    border-left: 5px solid #f18b22
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+    ._vue-flash-msg-body {
+        font-size: 18px;
+        width: 90%
+    }
+
+    ._vue-flash-msg-body._vue-flash-msg-_right-bottom, ._vue-flash-msg-body._vue-flash-msg-_right-top {
+        right: 5%
+    }
+
+    ._vue-flash-msg-body._vue-flash-msg-_left-bottom, ._vue-flash-msg-body._vue-flash-msg-_left-top {
+        left: 5%
+    }
+}
