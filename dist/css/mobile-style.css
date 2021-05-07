@@ -155,7 +155,7 @@ b, strong {
   display: none;
 }
 
-.gradient, .cat__ball, .category__link:hover, .category__link.active, .products__popular, .modal__popular {
+.gradient, .cat__ball, .category__link.active, .products__popular, .modal__popular {
   background: linear-gradient(253.3deg, #FE624C -3.43%, #EC2CA3 119.11%);
 }
 
@@ -616,7 +616,7 @@ b, strong {
   min-width: 59px;
 }
 
-.category__link:hover, .category__link.active {
+.category__link.active {
   color: #fff;
   border-color: transparent;
 }

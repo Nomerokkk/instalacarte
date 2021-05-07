@@ -469,7 +469,7 @@ b, strong {
         padding: 0 6px;
         color: #111224;
         min-width: 59px;
-        &:hover, &.active {
+        &.active {
             color: #fff;
             @extend .gradient;
             border-color: transparent;

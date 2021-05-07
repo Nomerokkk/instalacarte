@@ -2421,9 +2421,6 @@ textarea.input {
 .cat-page-content__bottom {
   border-top: 1px solid #EAEAEA;
   padding-top: 16px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .cat-page-content__bottom-popular .menu-info__btn {
@@ -2442,6 +2439,7 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 15px;
 }
 
 .new-item {
