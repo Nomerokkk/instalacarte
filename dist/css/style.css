@@ -1785,10 +1785,13 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #E8E8E8;
   color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  padding: 0 18px 0 9px;
+  padding: 0 10px;
   cursor: pointer;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
@@ -1796,6 +1799,7 @@ textarea.input {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 7px;
+  min-width: 65px;
 }
 
 .btn-small:hover {

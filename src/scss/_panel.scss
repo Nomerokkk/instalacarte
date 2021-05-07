@@ -385,15 +385,17 @@
 	line-height: 1;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	border: 1px solid #E8E8E8;
 	color: rgba(#000, .5);
 	border-radius: 20px;
-	padding: 0 18px 0 9px;
+	padding: 0 10px;
 	cursor: pointer;
 	transition: .3s all ease;
 	fill: #DBDBDB;
 	flex-shrink: 0;
 	margin-right: 7px;
+	min-width: 65px;
 	&:hover {
 		border: 1px solid $red;
 		color: $red;
