@@ -1727,7 +1727,7 @@ textarea.input {
 }
 
 .check input:checked + .check__inner .check__btn:before {
-  margin-left: 10px;
+  margin-left: 0;
   background: #EC2CA3;
 }
 
@@ -1758,7 +1758,7 @@ textarea.input {
   -webkit-transition: .2s all ease;
   transition: .2s all ease;
   display: block;
-  margin-left: 0;
+  margin-left: 10px;
 }
 
 .check__title {
@@ -2566,7 +2566,7 @@ textarea.input {
 }
 
 .new-item__popular-title {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .new-item .label__title {

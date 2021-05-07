@@ -336,7 +336,7 @@
 				.check {
 					&__btn {
 						&:before {
-							margin-left: 10px;
+							margin-left: 0;
 							background: $red;
 						}
 					}
@@ -363,7 +363,7 @@
 			background: rgba(#000, .5);
 			transition: .2s all ease;
 			display: block;
-			margin-left: 0;
+			margin-left: 10px;
 		}
 	}
 	&__title {
