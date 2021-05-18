@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+const clean = require('gulp-clean');
 const fileinclude = require('gulp-file-include');
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
@@ -9,10 +10,15 @@ const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
 	return gulp.src('./src/scss/**/*.scss')
-		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 		.pipe(autoprefixer('last 2 versions'))
 		.pipe(gulp.dest('./dist/css'))
 		.pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('remove_php', function() {
+	return gulp.src('./dist/**/*.html')
+		.pipe(clean({force: true}));
 });
 
 gulp.task('htmlgenerate', function() {
@@ -39,7 +45,7 @@ gulp.task('watch', function() {
     });
 	
 	gulp.watch('./src/scss/**/*.scss', gulp.series('sass'));
-	gulp.watch('./src/**/*.html', gulp.series('htmlgenerate'));
+	gulp.watch('./src/**/*.html', gulp.series('remove_php', 'htmlgenerate'));
 	gulp.watch('./src/js/*.js', gulp.series('jsgenerate'));
 });
 

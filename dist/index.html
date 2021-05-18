@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Instalacarte</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet preload prefetc" as="style" crossorigin="anonymous" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-	<meta name="viewport" content="width=1200">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -27,7 +27,6 @@
 
 	<link rel="alternate" href="https://instalacarte.com" hreflang="en" />
 
-	<link rel="stylesheet" href="libs/normalize.css">
 	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -35,7 +34,7 @@
 	<meta property="og:description" content="Upgrade your restaurant with a contactless QR menu and cloud based ordering. Great customer experience and no waiting means more returning clients and less waiters."/>
 	<meta property="og:image" content="img/facebook-logo.jpg"/>
 </head>
-<body>
+<body class="home">
 	<!--HEADER-->
 	<header class="header j-header">
 		<div class="container">
@@ -44,44 +43,71 @@
 					<a href="/" class="header__logo">
 						<img src="img/logo-home.png" alt="">
 					</a>
-					<div class="header__title">
-						Restaurants
-					</div>
+					<a href="/" class="header__logo header__logo--mobile">
+						<img src="img/logo-mobile.png" alt="">
+					</a>
 				</div>	
 				<div class="header__info2">
 					<a href="mailto:instalacarte@gmail.com" class="header__email">
 						hello@instalacarte.com
 					</a>
 					<div class="lang">
-						<div class="lang__title">
-							English
+						<div class="lang__title" data-target="#lang">
+							<span>English</span>
 						</div>
-						<ul>
+						<ul id="lang">
 							<li>
 								<a href="#">
 									Русский
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									Poland
+								<a href="#">								
+                                    Portuguesa                
 								</a>
 							</li>
 						</ul>
 					</div>
-
 					<a href="#login" class="btn" data-fancybox-my>
 						<svg>
 							<use xlink:href="img/qr-code.svg#icon"/>
 						</svg>
 						Create menu
 					</a>
+					<!--DESCTOP PERSON-->
+					<div class="person-wrapper">
+						<div class="person">
+							<svg>
+								<use xlink:href="img/user.svg#icon"/>
+							</svg>
+						</div>
+						<div class="person-wrapper__list">
+							<div class="person-wrapper__inner">
+								<a href="establishment.html">instalacarte@gmail.com</a>
+								<a href="#">Exit</a>
+							</div>
+						</div>
+					</div>
+					<!--MOBILE PERSON-->
+					<div class="person-home">
+						<div class="person-home__icon" data-target="#person">
+							<svg>
+								<use xlink:href="img/user.svg#icon"/>
+							</svg>
+						</div>
+						<div class="person-home__list" id="person">
+							<div class="person-home__inner">
+								<a href="establishment.html">instalacarte@gmail.com</a>
+								<a href="#">Exit</a>
+							</div>
+						</div>
+					</div>
 				</div>		
 			</div>
 		</div>
 	</header>
 
-<!--BANNER-->
+	<!--BANNER-->
 	<div class="banner">
 		<div class="container">
 			<div class="banner__wrapper">
@@ -93,54 +119,86 @@
 						<use xlink:href="img/qr-code.svg#icon"/>
 					</svg>
 				</div>
-				<div class="banner__item">
-					<div class="banner__title">
-						Take Photos of Dishes
-					</div>
-					<div class="banner__desc">
-						Make a nice image of every menu item. Your clients will see photos when they browse the menu.
-					</div>
-					<div class="banner__step">
-						Step 1
-					</div>
-				</div>
-				<div class="banner__item banner__item--gradient">
-					<div class="banner__img2 j-lazy" data-src="img/banner__img2.png"></div>
-					<div class="banner__title">
-						Easy Menu Upload
-					</div>
-					<div class="banner__desc">
-						Upload images, descriptions and prices for every menu item. A unique QR code will be generated for your restaurant.
-					</div>
-					<a href="https://instalacarte.com/m/WAGAMAMA" class="banner__btn" target="_blank">
-						<div class="btn">
-							Scan demo menu
+				<div class="banner__slider j-banner-slider">
+					<div class="banner__slider-wrapper">
+						<div class="banner__item">
+							<div class="banner__title">
+								Take Photos of Dishes
+							</div>
+							<div class="banner__desc">
+								Make a nice image of every menu item. Your clients will see photos when they browse the menu.
+							</div>
+							<div class="banner__step">
+								Step 1
+							</div>
 						</div>
-						<div class="banner__code j-lazy" data-src="img/banner__code.svg"></div>
-					</a>
-					<div class="banner__step">
-						Step 2
-					</div>
-					<div class="banner__arrow banner__arrow--left">
-						<svg>
-							<use xlink:href="img/arrow.svg#icon"/>
-						</svg>
-					</div>
-					<div class="banner__arrow banner__arrow--right">
-						<svg>
-							<use xlink:href="img/arrow.svg#icon"/>
-						</svg>
-					</div>
-				</div>
-				<div class="banner__item">
-					<div class="banner__title">
-						Scan QR Code & Browse Menu
-					</div>
-					<div class="banner__desc">
-						Print and place QR code on each table. Customers scan the QR code and browse the menu.
-					</div>
-					<div class="banner__step">
-						Step 3
+						<div class="banner__item banner__item--gradient">
+							<div class="banner__img2 j-lazy" data-src="img/banner__img2.png"></div>
+							<div class="banner__title">
+								Easy Menu Upload
+							</div>
+							<div class="banner__desc">
+								Upload images, descriptions and prices for every menu item. A unique QR code will be generated for your restaurant.
+							</div>
+							<a href="https://instalacarte.com/m/WAGAMAMA" class="banner__btn" target="_blank">
+								<div class="btn">
+									Scan demo menu
+								</div>
+								<div class="banner__code j-lazy" data-src="img/banner__code.svg"></div>
+							</a>
+							<div class="banner__step">
+								Step 2
+							</div>
+							<div class="banner__arrow banner__arrow--left">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+							<div class="banner__arrow banner__arrow--right">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+						</div>
+						<div class="banner__item">
+							<div class="banner__title">
+								Scan QR Code & Browse Menu
+							</div>
+							<div class="banner__desc">
+								Print and place QR code on each table. Customers scan the QR code and browse the menu.
+							</div>
+							<div class="banner__step">
+								Step 3
+							</div>
+						</div>
+						<div class="banner__item banner__item--gradient banner__item--mobile">
+							<div class="banner__img2 j-lazy" data-src="img/banner__img2.png"></div>
+							<div class="banner__title">
+								Free QR<br> restaurant menu
+							</div>
+							<div class="banner__desc">
+								Create menu that enables restaurant guests to place eat-in, takeaway or delivery orders from their smartphones without the need for a waiter.
+							</div>
+							<a href="https://instalacarte.com/m/WAGAMAMA" class="banner__btn" target="_blank">
+								<div class="btn">
+									Scan demo menu
+								</div>
+								<div class="banner__code j-lazy" data-src="img/banner__code.svg"></div>
+							</a>
+							<div class="banner__step">
+								Step 2
+							</div>
+							<div class="banner__arrow banner__arrow--left">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+							<div class="banner__arrow banner__arrow--right">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -152,8 +210,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="news__item">
+					<div class="news__item news__item--video" data-fancybox data-src="https://www.youtube.com/watch?v=Vt4N-8-EOlU&ab_channel=InstalacarteFreeQRMenu">
 						<div class="news__img">
+							<div class="news__play"></div>
 							<img class="j-lazy" data-src="img/news1.jpg" alt="">
 						</div>
 						<div class="news__text">
@@ -226,10 +285,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks1.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks1.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks1-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks1-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -246,10 +305,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks2.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks2.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks2-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks2-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -266,10 +325,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks3.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks3.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks3-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks3-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -286,10 +345,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks4.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks4.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks4-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks4-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -306,10 +365,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks5.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks5.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks5-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks5-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -326,10 +385,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks6.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks6.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks6-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks6-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -346,10 +405,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks7.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks7.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks7-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks7-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -366,10 +425,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks8.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks8.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks8-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks8-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -386,10 +445,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks9.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks9.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks9-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks9-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -408,6 +467,8 @@
 
 	<!--BUILD-->
 	<div class="build j-lazy" data-src="img/build.jpg">
+		<div class="build__bg build__bg--1 j-lazy" data-src="img/build__bg.svg"></div>
+		<div class="build__bg build__bg--2 j-lazy" data-src="img/build__bg2.svg"></div>
 		<div class="container">
 			<div class="title-sec">
 				Build Your QR code Contactless Menu Now
@@ -427,7 +488,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                <div class="header__logo">
+                <div class="footer__logo">
                     <img src="img/logo-home.png" alt="">
                 </div>
                 <div class="footer__copyright">
@@ -443,6 +504,7 @@
                         </svg>
                     </div>
                 </div>
+                <a href="mailto:hello@instalacarte.com" class="footer__email">hello@instalacarte.com</a>
             </div>
         </div>
     </footer>
@@ -466,7 +528,7 @@
                     <span>or</span>
                 </div>
                 <div class="input-wrapper">
-                    <input type="email" placeholder="E-mail" class="input" required autocomplete="off">
+                    <input type="email" placeholder="E-mail" class="input" autocomplete="off">
                     <input type="password" placeholder="Password" class="input" autocomplete="off">
                 </div>
                 <div class="login__recaptcha">
@@ -506,7 +568,7 @@
                     <span>or</span>
                 </div>
                 <div class="input-wrapper">
-                    <input type="email" placeholder="E-mail" class="input" required autocomplete="off">
+                    <input type="email" placeholder="E-mail" class="input" autocomplete="off">
                     <input type="password" placeholder="Password" class="input" autocomplete="off">
                 </div>
                 <div class="login__recaptcha">
@@ -544,13 +606,13 @@
     </div>    
     
     <script src="libs/jquery.min.js"></script>
-    <script src="libs/underscore.min.js"></script>
     <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
     <script src="libs/jquery-lazy/jquery.lazy.plugins.min.js"></script>
     <script src="libs/jquery.maskedinput.min.js"></script>
     <script src="libs/jquery.fancybox.min.js"></script>
     <script src="libs/svg4everybody.min.js"></script>
     <script src="libs/jquery.nice-select.min.js"></script>
+    <script src="libs/swiper.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 	background: #f8f8f8;
 	padding-top: 0;
 	min-height: 100vh;
+	min-width: 1170px;
 	display: flex;
 	flex-direction: column;
 	&__wrapper {
@@ -238,6 +239,12 @@
 			background: linear-gradient(253.3deg, #FE624C -3.43%, #EC2CA3 119.11%);
 			border-color: transparent;
 		}
+		&.disabled {
+			cursor: no-drop;
+			&:hover {
+				border: 1px solid rgba($red, .1);
+			}
+		}
 		&--parent {
 			cursor: pointer;
 			padding: 0;
@@ -336,7 +343,7 @@
 				.check {
 					&__btn {
 						&:before {
-							margin-left: 10px;
+							margin-left: 0;
 							background: $red;
 						}
 					}
@@ -363,7 +370,7 @@
 			background: rgba(#000, .5);
 			transition: .2s all ease;
 			display: block;
-			margin-left: 0;
+			margin-left: 10px;
 		}
 	}
 	&__title {

@@ -27,7 +27,6 @@
 	
     <link rel="alternate" href="https://instalacarte.com" hreflang="en" />
 
-	<link rel="stylesheet" href="libs/normalize.css">
 	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -39,6 +38,9 @@
 	<!--HEADER-->
 	<header class="header-panel">
 		<div class="header-panel__wrapper">
+			<a href="orders.html" class="btn header-panel__help-btn">
+				Orders
+			</a>
             <a href="#help" class="btn header-panel__help-btn" data-fancybox>
 				Help
 			</a>
@@ -70,7 +72,7 @@
 				</div>
 				<div class="person-wrapper__list">
 					<div class="person-wrapper__inner">
-						<a href="mailto:instalacarte@gmail.com">instalacarte@gmail.com</a>
+						<a href="establishment.html">instalacarte@gmail.com</a>
 						<a href="#">Exit</a>
 					</div>
 				</div>
@@ -91,7 +93,7 @@
 					</a>
 				</li>
 				<li class="">
-					<div class="menu__link menu__link--parent " data-target="#menu1">
+					<div class="menu__link menu__link--parent " data-toggle="#menu1">
 						<a href="menu.html">
 							Menu
 						</a>
@@ -109,25 +111,19 @@
 						<li><a href="category.html">Popular</a></li>
 					</ul>
 				</li>
+				<li>
+					<a href="orders.html" class="menu__link  disabled">
+						Orders
+					</a>
+				</li>
 			</ul>			
 		</div>
 	</div>
 
 	<div class="panel__wrapper">
 		<form class="console">
-			<div class="console__top">
-				<div class="console__title">		
-					Settings
-				</div>
-				<button class="btn" type="submit">
-					Save
-				</button>
-			</div>
 			<div class="settings">
 				<div class="settings__bl">
-					<div class="console__title">
-						Establishment Base Info
-					</div>
 					<div class="settings__inner">
 						<div class="settings__item">
 							<div class="settings__title">
@@ -164,9 +160,6 @@
 					</div>
 				</div>
 				<div class="settings__bl">
-					<div class="console__title">
-						Address Details
-					</div>
 					<div class="settings__inner">
 						<div class="settings__item">
 							<div class="settings__title">
@@ -194,22 +187,84 @@
 						<button class="btn" type="submit">
 							Save
 						</button>
-						<a href="menu.html" class="btn btn--border2 active">
-							Go to menu
-						</a>
 					</div>
 				</div>
 				<div class="settings__bl">
-					<div class="console__title">
-						Google Map
-					</div>
 					<div class="settings__inner">
-						<div class="settings__item">
-							<div class="settings__title">
-								URL
+						<div class="settings-order">
+							<div class="settings-order__item">
+								<div class="settings-order__title">
+									<div class="console__title">
+										Ordering
+									</div>
+								</div>
 							</div>
-							<div class="settings__input">
-								<input type="text" class="input" placeholder="Paste a link to your Google Business here">
+							<div class="settings-order__table">
+								<div class="settings-order__tr">
+									<div class="settings-order__td">
+										Dine in
+									</div>
+									<div class="settings-order__td">
+										<label class="check">
+											<input type="checkbox" checked>
+											<div class="check__inner">
+												<div class="check__btn"></div>
+											</div>
+										</label>
+									</div>		
+								</div>
+								<div class="settings-order__tr">
+									<div class="settings-order__td">
+										Takeout
+									</div>
+									<div class="settings-order__td">
+										<label class="check">
+											<input type="checkbox" checked>
+											<div class="check__inner">
+												<div class="check__btn"></div>
+											</div>
+										</label>
+									</div>								
+								</div>
+								<div class="settings-order__tr">
+									<div class="settings-order__td">
+										Delivery
+									</div>
+									<div class="settings-order__td">
+										<label class="check">
+											<input type="checkbox" checked>
+											<div class="check__inner">
+												<div class="check__btn"></div>
+											</div>
+										</label>
+									</div>	
+								</div>
+							</div>
+							<div class="settings-order__item settings-order__time">
+								<div class="settings-order__title">
+									Time of receiving orders
+								</div>
+								<div class="settings-order__inputs">
+									<div class="settings-order__inputs-input">
+										<input type="text" class="input j-time" placeholder="from">
+									</div>
+									<span>-</span>
+									<div class="settings-order__inputs-input">
+										<input type="text" class="input j-time" placeholder="to">
+									</div>
+								</div>
+							</div>
+							<div class="settings-order__buttons">
+								<div class="settings-order__buttons-col">
+									<a href="menu.html" class="settings-order__btn btn active">
+										Go to menu
+									</a>
+								</div>
+								<div class="settings-order__buttons-col">
+									<button type="submit" class="btn">
+										Save
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -218,32 +273,31 @@
 					<div class="console__title">
 						QR Code
 					</div>
+					<br>
 					<div class="settings__inner">
 						<div class="settings__item">
 							<div class="settings__title">
-								URL
+								Link
 							</div>
-							<div class="settings__input j-copy-wrapper">
-								<div class="row">
-									<input type="text" class="input j-copy-input" placeholder="URL link here" disabled value="https://prnt.sc/w4y7i6">
-									<div class="col">
-										<div class="j-tooltip tooltip">
-											Скопировано
-										</div>
-										<div class="btn j-copy">
-											Copy
-										</div>
+							<div class="settings__input">
+								<div class="settings__code-row j-copy-wrapper">
+									<input type="text" class="input j-copy-input" placeholder="URL link here">
+									<div class="btn j-copy">
+										Copy
 									</div>
-								</div>
+									<div class="j-tooltip tooltip">
+										Скопировано
+									</div>
+								</div>	
 							</div>
 						</div>
-						<div class="settings__code">
-							<div class="settings__code-img j-lazy" data-src="img/qr-logo1.png">
-								<img src="img/code.png" alt="">
+						<div class="settings__item">
+							<div class="settings__title"></div>
+							<div class="settings__input">
+								<a href="#success" class="btn btn--border settings__code-btn">
+									Download QR code
+								</a>
 							</div>
-							<a href="#success" class="settings__code-btn">
-								Download as SVG
-							</a>
 						</div>
 					</div>
 				</div>

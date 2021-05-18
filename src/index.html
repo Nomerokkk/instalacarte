@@ -1,6 +1,6 @@
 @@include('./templates/header.html')
 
-<!--BANNER-->
+	<!--BANNER-->
 	<div class="banner">
 		<div class="container">
 			<div class="banner__wrapper">
@@ -12,54 +12,86 @@
 						<use xlink:href="img/qr-code.svg#icon"/>
 					</svg>
 				</div>
-				<div class="banner__item">
-					<div class="banner__title">
-						Take Photos of Dishes
-					</div>
-					<div class="banner__desc">
-						Make a nice image of every menu item. Your clients will see photos when they browse the menu.
-					</div>
-					<div class="banner__step">
-						Step 1
-					</div>
-				</div>
-				<div class="banner__item banner__item--gradient">
-					<div class="banner__img2 j-lazy" data-src="img/banner__img2.png"></div>
-					<div class="banner__title">
-						Easy Menu Upload
-					</div>
-					<div class="banner__desc">
-						Upload images, descriptions and prices for every menu item. A unique QR code will be generated for your restaurant.
-					</div>
-					<a href="https://instalacarte.com/m/WAGAMAMA" class="banner__btn" target="_blank">
-						<div class="btn">
-							Scan demo menu
+				<div class="banner__slider j-banner-slider">
+					<div class="banner__slider-wrapper">
+						<div class="banner__item">
+							<div class="banner__title">
+								Take Photos of Dishes
+							</div>
+							<div class="banner__desc">
+								Make a nice image of every menu item. Your clients will see photos when they browse the menu.
+							</div>
+							<div class="banner__step">
+								Step 1
+							</div>
 						</div>
-						<div class="banner__code j-lazy" data-src="img/banner__code.svg"></div>
-					</a>
-					<div class="banner__step">
-						Step 2
-					</div>
-					<div class="banner__arrow banner__arrow--left">
-						<svg>
-							<use xlink:href="img/arrow.svg#icon"/>
-						</svg>
-					</div>
-					<div class="banner__arrow banner__arrow--right">
-						<svg>
-							<use xlink:href="img/arrow.svg#icon"/>
-						</svg>
-					</div>
-				</div>
-				<div class="banner__item">
-					<div class="banner__title">
-						Scan QR Code & Browse Menu
-					</div>
-					<div class="banner__desc">
-						Print and place QR code on each table. Customers scan the QR code and browse the menu.
-					</div>
-					<div class="banner__step">
-						Step 3
+						<div class="banner__item banner__item--gradient">
+							<div class="banner__img2 j-lazy" data-src="img/banner__img2.png"></div>
+							<div class="banner__title">
+								Easy Menu Upload
+							</div>
+							<div class="banner__desc">
+								Upload images, descriptions and prices for every menu item. A unique QR code will be generated for your restaurant.
+							</div>
+							<a href="https://instalacarte.com/m/WAGAMAMA" class="banner__btn" target="_blank">
+								<div class="btn">
+									Scan demo menu
+								</div>
+								<div class="banner__code j-lazy" data-src="img/banner__code.svg"></div>
+							</a>
+							<div class="banner__step">
+								Step 2
+							</div>
+							<div class="banner__arrow banner__arrow--left">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+							<div class="banner__arrow banner__arrow--right">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+						</div>
+						<div class="banner__item">
+							<div class="banner__title">
+								Scan QR Code & Browse Menu
+							</div>
+							<div class="banner__desc">
+								Print and place QR code on each table. Customers scan the QR code and browse the menu.
+							</div>
+							<div class="banner__step">
+								Step 3
+							</div>
+						</div>
+						<div class="banner__item banner__item--gradient banner__item--mobile">
+							<div class="banner__img2 j-lazy" data-src="img/banner__img2.png"></div>
+							<div class="banner__title">
+								Free QR<br> restaurant menu
+							</div>
+							<div class="banner__desc">
+								Create menu that enables restaurant guests to place eat-in, takeaway or delivery orders from their smartphones without the need for a waiter.
+							</div>
+							<a href="https://instalacarte.com/m/WAGAMAMA" class="banner__btn" target="_blank">
+								<div class="btn">
+									Scan demo menu
+								</div>
+								<div class="banner__code j-lazy" data-src="img/banner__code.svg"></div>
+							</a>
+							<div class="banner__step">
+								Step 2
+							</div>
+							<div class="banner__arrow banner__arrow--left">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+							<div class="banner__arrow banner__arrow--right">
+								<svg>
+									<use xlink:href="img/arrow.svg#icon"/>
+								</svg>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -71,8 +103,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="news__item">
+					<div class="news__item news__item--video" data-fancybox data-src="https://www.youtube.com/watch?v=Vt4N-8-EOlU&ab_channel=InstalacarteFreeQRMenu">
 						<div class="news__img">
+							<div class="news__play"></div>
 							<img class="j-lazy" data-src="img/news1.jpg" alt="">
 						</div>
 						<div class="news__text">
@@ -145,10 +178,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks1.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks1.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks1-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks1-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -165,10 +198,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks2.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks2.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks2-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks2-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -185,10 +218,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks3.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks3.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks3-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks3-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -205,10 +238,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks4.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks4.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks4-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks4-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -225,10 +258,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks5.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks5.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks5-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks5-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -245,10 +278,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks6.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks6.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks6-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks6-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -265,10 +298,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks7.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks7.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks7-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks7-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -285,10 +318,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks8.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks8.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks8-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks8-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -305,10 +338,10 @@
 					<div class="ticks__item">
 						<div class="ticks__icon">
 							<div class="ticks__icon-relative">
-								<img src="img/ticks9.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks9.svg" alt="">
 							</div>
 							<div class="ticks__icon-absolute">
-								<img src="img/ticks9-h.svg" alt="">
+								<img class="j-lazy" data-src="img/ticks9-h.svg" alt="">
 							</div>
 						</div>
 						<div class="ticks__text">
@@ -327,6 +360,8 @@
 
 	<!--BUILD-->
 	<div class="build j-lazy" data-src="img/build.jpg">
+		<div class="build__bg build__bg--1 j-lazy" data-src="img/build__bg.svg"></div>
+		<div class="build__bg build__bg--2 j-lazy" data-src="img/build__bg2.svg"></div>
 		<div class="container">
 			<div class="title-sec">
 				Build Your QR code Contactless Menu Now
