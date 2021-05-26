@@ -673,7 +673,7 @@
 							<div class="ordering__tabs-item active" data-tab=".tab1">
 								Eat in
 							</div>
-							<div class="ordering__tabs-item disabled">
+							<div class="ordering__tabs-item" data-tab=".tab2">
 								Takeaway
 							</div>
 							<div class="ordering__tabs-item" data-tab=".tab3">
@@ -774,24 +774,22 @@
 									<select id="time" name="time"><option value="false">When ready</option><option value="19:56">19:56</option><option value="19:57">19:57</option><option value="19:58">19:58</option><option value="19:59">19:59</option><option value="20:00">20:00</option><option value="20:01">20:01</option><option value="20:02">20:02</option><option value="20:03">20:03</option><option value="20:04">20:04</option><option value="20:05">20:05</option><option value="20:10">20:10</option><option value="20:15">20:15</option><option value="20:20">20:20</option><option value="20:25">20:25</option><option value="20:30">20:30</option><option value="20:45">20:45</option><option value="21:00">21:00</option><option value="21:15">21:15</option><option value="21:30">21:30</option><option value="21:45">21:45</option><option value="22:00">22:00</option><option value="22:15">22:15</option><option value="22:30">22:30</option><option value="22:45">22:45</option><option value="23:00">23:00</option><option value="Завтра 07:30">Завтра 07:30</option><option value="Завтра 08:00">Завтра 08:00</option><option value="Завтра 08:30">Завтра 08:30</option><option value="Завтра 09:00">Завтра 09:00</option><option value="Завтра 09:30">Завтра 09:30</option><option value="Завтра 10:00">Завтра 10:00</option><option value="Завтра 10:30">Завтра 10:30</option><option value="Завтра 11:00">Завтра 11:00</option><option value="Завтра 11:30">Завтра 11:30</option><option value="Завтра 12:00">Завтра 12:00</option><option value="Завтра 12:30">Завтра 12:30</option><option value="Завтра 13:00">Завтра 13:00</option><option value="Завтра 13:30">Завтра 13:30</option><option value="Завтра 14:00">Завтра 14:00</option><option value="Завтра 14:30">Завтра 14:30</option><option value="Завтра 15:00">Завтра 15:00</option><option value="Завтра 15:30">Завтра 15:30</option><option value="Завтра 16:00">Завтра 16:00</option><option value="Завтра 16:30">Завтра 16:30</option><option value="Завтра 17:00">Завтра 17:00</option><option value="Завтра 17:30">Завтра 17:30</option><option value="Завтра 18:00">Завтра 18:00</option><option value="Завтра 18:30">Завтра 18:30</option><option value="Завтра 19:00">Завтра 19:00</option><option value="Завтра 19:30">Завтра 19:30</option><option value="Завтра 20:00">Завтра 20:00</option><option value="Завтра 20:30">Завтра 20:30</option><option value="Завтра 21:00">Завтра 21:00</option><option value="Завтра 21:30">Завтра 21:30</option><option value="Завтра 22:00">Завтра 22:00</option><option value="Завтра 22:30">Завтра 22:30</option><option value="Завтра 23:00">Завтра 23:00</option></select>
 								</div>
 							</div>
-							<div class="ordering__info-item">
+							<label class="ordering__info-item text error">
 								<div class="ordering__info-title">
 									<div>
 										<svg>
-											<use xlink:href="img-mobile/adress.svg#icon"/>
+											<use xlink:href="img-mobile/name.svg#icon"/>
 										</svg>
 									</div>
-									Adress
+									Adress  <span>*</span>
 								</div>
-								<div class="ordering__info-input select">
-									<select name="adress">
-										<option value="">Restaurant address</option>
-										<option value="Street1">Street1</option>
-										<option value="Street1">Street2</option>
-										<option value="Street1">Street3</option>
-									</select>
+								<div class="ordering__info-input">
+									<input type="text" placeholder=" ">
+									<div class="ordering__info-placeholder">
+										Restaurant address
+									</div>
 								</div>
-							</div>
+							</label>
 							<label class="ordering__info-item text error">
 								<div class="ordering__info-title">
 									<div>
