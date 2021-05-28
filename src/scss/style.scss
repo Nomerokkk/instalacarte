@@ -215,7 +215,7 @@ b, strong {
 	z-index: 1;
 	overflow: hidden;
 	@extend .gradient;
-	&:not(.disabled):hover {
+	&:not(.disabled):not(.btn--border):hover {
 		@extend .gradient-hover;
 		box-shadow: 0 0 15px 0 rgba($orange, .8);
 	}
