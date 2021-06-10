@@ -855,6 +855,10 @@ b, strong {
         font-size: 30px;
         flex-shrink: 0;
         margin-right: 10px;
+        img {
+            max-width: 37px;
+            max-height: 38px;
+        }
     }
     &__icon-basket {
         font-size: 30px;
