@@ -10,3 +10,26 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('../fonts/StratosLCWeb-Bold.eot');
+    src: url('../fonts/StratosLCWeb-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StratosLCWeb-Bold.woff2') format('woff2'),
+        url('../fonts/StratosLCWeb-Bold.woff') format('woff'),
+        url('../fonts/StratosLCWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('../fonts/StratosLCWeb-Regular.eot');
+    src: url('../fonts/StratosLCWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StratosLCWeb-Regular.woff2') format('woff2'),
+        url('../fonts/StratosLCWeb-Regular.woff') format('woff'),
+        url('../fonts/StratosLCWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

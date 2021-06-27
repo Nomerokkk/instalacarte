@@ -511,10 +511,39 @@
 
     <!--LOGIN-->
     <div class="modal login" id="login">
-        <form action="establishment.html">
+        <ul class="login__tabs">
+            <li><a href="#register" data-fancybox-my>SIGN UP</a></li>
+            <li><div class="active">LOG IN</div></li>
+        </ul>
+        <form class="login__form" action="establishment.html">
             <div class="modal__inner">
-                <div class="modal__title">
-                    Please, Login
+                <div class="input-wrapper">
+                    <label class="label">
+                        <div class="label__title">
+                            Email
+                        </div>
+                        <input type="text" class="input" required="" autocomplete="off">
+                    </label>
+                    <label class="label">
+                        <div class="label__title">
+                            Password *
+                        </div>
+                        <input type="password" class="input" required="" autocomplete="off">
+                    </label>
+                </div>
+                <div class="login__recaptcha">
+                    <img src="img/googlerec.jpg" alt="">
+                </div>
+                <div class="login__btn">
+                    <button type="submit" class="btn">
+                        Log in
+                    </button> 
+                </div>
+                <div class="login__lost">
+                    <a href="#forgot" data-fancybox-my="">Forgot password?</a>
+                </div>
+                <div class="login__or">
+                    <span>or</span>
                 </div>
                 <div class="login__google">
                     Google
@@ -524,37 +553,42 @@
                     Facebook
                     <img src="img/facebook.svg" alt="">
                 </div>
-                <div class="login__or">
-                    <span>or</span>
-                </div>
-                <div class="input-wrapper">
-                    <input type="email" placeholder="E-mail" class="input" autocomplete="off">
-                    <input type="password" placeholder="Password" class="input" autocomplete="off">
-                </div>
-                <div class="login__recaptcha">
-                    <img src="img/googlerec.jpg" alt="">
-                </div>
-                <button type="submit" class="btn">
-                    Log in
-                </button>
-            </div>
-            <div class="login__bottom">
-                <a href="#">
-                    Forgot Password?
-                </a>
-                <a href="#register" data-fancybox-my>
-                    Sign up
-                </a>
             </div>
         </form>
     </div>
 
     <!--REGISTER-->
     <div class="modal login" id="register">
-        <form action="establishment.html">
+        <ul class="login__tabs">
+            <li><div class="active">SIGN UP</div></li>
+            <li><a href="#login" data-fancybox-my>LOG IN</a></li>
+        </ul>
+        <form class="login__form" action="establishment.html">
             <div class="modal__inner">
-                <div class="modal__title">
-                    Sign Up
+                <div class="input-wrapper">
+                    <label class="label">
+                        <div class="label__title">
+                            Email
+                        </div>
+                        <input type="text" class="input" required="" autocomplete="off">
+                    </label>
+                    <label class="label">
+                        <div class="label__title">
+                            Password *
+                        </div>
+                        <input type="password" class="input" required="" autocomplete="off">
+                    </label>
+                </div>
+                <div class="login__recaptcha">
+                    <img src="img/googlerec.jpg" alt="">
+                </div>
+                <div class="login__btn">
+                    <button type="submit" class="btn">
+                        Sign up
+                    </button> 
+                </div>
+                <div class="login__or">
+                    <span>or</span>
                 </div>
                 <div class="login__google">
                     Google
@@ -564,24 +598,38 @@
                     Facebook
                     <img src="img/facebook.svg" alt="">
                 </div>
-                <div class="login__or">
-                    <span>or</span>
+            </div>
+        </form>
+    </div>
+
+    <!--FORGOT PASSWORD-->
+    <div class="modal login login--forgot" id="forgot">
+        <form class="login__form" action="establishment.html">
+            <div class="modal__inner">
+                <div class="modal__title">
+                    Password recovery
                 </div>
                 <div class="input-wrapper">
-                    <input type="email" placeholder="E-mail" class="input" autocomplete="off">
-                    <input type="password" placeholder="Password" class="input" autocomplete="off">
+                    <label class="label">
+                        <div class="label__title">
+                            Email
+                        </div>
+                        <input type="text" class="input" required="" autocomplete="off">
+                    </label>
                 </div>
                 <div class="login__recaptcha">
                     <img src="img/googlerec.jpg" alt="">
                 </div>
-                <button type="submit" class="btn">
-                    Log in
-                </button>
-            </div>
-            <div class="login__bottom login__bottom--center">
-                <a href="#login" data-fancybox-my>
-                    I have account
-                </a>
+                <div class="login__btn">
+                    <button type="submit" class="btn">
+                        Restore
+                    </button> 
+                </div>
+                <div class="login__lost">
+                    <a href="#login" data-fancybox-my=""> 
+                        I have account
+                    </a>
+                </div>
             </div>
         </form>
     </div>

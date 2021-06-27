@@ -2,6 +2,7 @@ $orange: #FE624C;
 $red: #EC2CA3;
 $font: 'Sansation';
 $roboto: 'Roboto', sans-serif;
+$strat: 'Stratos LC Web';
 
 $black: #111224;
 
@@ -250,6 +251,32 @@ b, strong {
 			color: $red;
 			background: transparent;
 			box-shadow: none;
+		}
+	}
+	&--border2 {
+		border: 1px solid #E8E8E8;
+		background: #fff;
+		color: #111224;
+		// transition: .3s all ease;
+		&:hover {
+			box-shadow: 0 0 15px 0 rgba($orange, .8);
+			color: #fff;
+			border: 0;
+			&:before {
+				opacity: 1;
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			@extend .gradient-hover;
+			opacity: 0;
+			transition: .3s all ease;
+			z-index: -1;
 		}
 	}
 	&.disabled {

@@ -67,6 +67,9 @@
 			margin-left: 20px;
 		}
 	}
+	&__mobile-title {
+		display: none;
+	}
 }
 
 .settings-order {
@@ -127,10 +130,6 @@
 		color: $black;
 		border: 1px solid $red;
 		cursor: no-drop;
-		&:hover {
-			background: #F8F8F8;
-			box-shadow: none;
-		}
 		&:before {
 			content: '';
 			width: 100%;
@@ -143,7 +142,7 @@
 			opacity: 0;
 			transition: .3s ease;
 		}
-		&.active {
+		&:not(.disabled) {
 			color: $red;
 			cursor: pointer;
 			&:hover {
@@ -201,6 +200,15 @@
 			background: #fff;
 			display: block;
 			border-radius: 4px;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.settings {
+		&__mobile-title {
+			display: block;
+			margin: 0 0 30px;
 		}
 	}
 }
