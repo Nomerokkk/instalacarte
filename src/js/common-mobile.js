@@ -385,6 +385,8 @@ $(function() {
     $ordering.swipe({
         allowPageScroll: 'vertical',
         threshold: 1,
+        fingers:'all',
+        triggerOnTouchLeave: true,
         excludedElements: "label, button, input, select, textarea",
         swipeStatus:function(event, phase, direction, distance, duration, fingers, fingerData, currentDirection) {
             if(direction == 'down') {
@@ -396,6 +398,7 @@ $(function() {
                     gsap.to($ordering_offset[0], {height: distance + 88, duration: .3});
                 }
             }
+            console.log('asd')
         },
         swipeDown: function(event, direction, distance, duration, fingerCount) {
             if(distance > 100) {
@@ -415,6 +418,54 @@ $(function() {
         $overlay.toggleClass('active-target');
     });
 });
+
+
+/******************TYPED placeholder******************/
+var $placeholder = $('.j-placeholder');
+
+$placeholder.each(function() {
+    var $this = $(this),
+        str = $this[0].innerText,
+        symbols = str.split(''),
+        count = 0;
+
+    $this[0].innerHTML = '';
+    
+    symbols.forEach(function(item, i, arr) {
+        var span = document.createElement('span'); // создаем span
+            span.classList.add('j-title-span');
+
+            if(item == ' ') {
+                span.innerHTML = ' ';
+            } else {
+                span.innerHTML = item;
+            }
+
+            span.setAttribute('data-delay', count);
+            
+        $this[0].append(span);
+
+        count = count + 0.04;
+    });
+});
+
+function animate_symbols($elem) {
+    var delay = $elem.attr('data-delay');
+    
+    setTimeout(function() {
+        $elem.find('.j-title-span').each(function() {
+            var $this = $(this),
+                delay = $this.attr('data-delay');
+
+            gsap.to(this, {
+                duration: 0,
+                delay: delay,
+                autoAlpha: 1, 
+                ease: 'power2', 
+            }); 
+        });
+    }, delay * 1000);
+}
 
 
 /********************TABS****************/
@@ -446,9 +497,12 @@ $(function() {
 
         $item.removeClass('active');
         $tabs_wrapper.removeClass('active');
+        $tabs_wrapper.find('.j-title-span').removeAttr('style');
 
         $this.addClass('active');
         $(id).addClass('active');
+
+        animate_symbols($(id).find('.j-placeholder'));
 
         change_tabs_item();
     });

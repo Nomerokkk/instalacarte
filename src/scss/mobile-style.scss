@@ -1279,6 +1279,7 @@ b, strong {
             &.disabled {
                 z-index: 0;
                 cursor: no-drop;
+                display: none;
                 &:before {
                     content: '';
                     left: 1px;
@@ -1483,7 +1484,24 @@ b, strong {
                 border-color: red;
                 .ordering__info-title {
                     fill: red;
-                    color: red;;
+                    color: red;
+                    font-size: 14px;
+                }
+                .ordering__info-placeholder,
+                .iti__selected-dial-code {
+                    color: red;
+                    font-size: 14px;
+                }
+                .iti__arrow {
+                    border-top-color: red;
+                    border-bottom-color: red;
+                }
+                select {
+                    color: red;
+                    font-size: 14px;
+                    option {
+                        color: $black;
+                    }
                 }
             }
         }
@@ -1560,12 +1578,15 @@ b, strong {
             top: 0;
             opacity: 0;
             height: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0 15px;
+            padding: 12px 15px 0;
             color: #868686;
-            transition: .3s;
+            transition: .3s opacity;
             pointer-events: none;
+            span {
+                display: inline;
+                opacity: 0;
+                transition: .5s opacity ease;
+            }
         }
         &-country {
             position: absolute;

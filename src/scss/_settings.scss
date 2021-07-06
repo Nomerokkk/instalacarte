@@ -107,12 +107,21 @@
 	}
 	&__inputs {
 		display: flex;
-		align-items: center;
-		&-input {
-			width: 96px;
+		&-title {
+			font-weight: 500;
+			margin: 0 0 5px 16px;
 		}
-		span {
-			margin: 0 14px;
+		&-row {
+			width: 240px;
+			display: flex;
+			align-items: center;
+			margin: 0 -10px;
+		}
+		.select {
+			margin: 0 10px;
+		}
+		> span {
+			margin: 38px 14px 0;
 		}
 		.input {
 			text-align: center;
@@ -201,6 +210,16 @@
 			display: block;
 			border-radius: 4px;
 		}
+	}
+}
+
+.settings-buttons {
+	margin-top: 40px;
+}
+
+.datepicker {
+	&--time-current {
+		display: none;
 	}
 }
 

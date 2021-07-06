@@ -34,7 +34,6 @@ $(function() {
 	$document.ready(function() {
 		headerFixed();
 		$('.j-mask').mask('+38 (099) 999-99-99');
-		$('.j-time').mask('99:99');
 	});
 });
 
@@ -235,3 +234,16 @@ $('.j-copy').on('click', function() {
 $window.on('load', function() {
 	$('.j-load-item').removeClass('j-load-item');
 })
+
+
+/*****************TIMEPICKER***************/
+$(function() {
+	var $time = $('.j-time');
+
+	$time.mask('99:99')
+
+	$time.datepicker({
+		onlyTimepicker: true,
+		timepicker: true
+	});
+});

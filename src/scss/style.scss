@@ -348,6 +348,13 @@ b, strong {
 		border: 2px solid red !important;
 	}
 }
+
+.input-error {
+	margin: -10px 0 0 28px;
+	color: red;
+	font-weight: 500;
+}
+
 textarea.input {
 	height: auto;
 	border-radius: 20px;
@@ -420,6 +427,7 @@ textarea.input {
 			height: 6px;
 			display: block;
 			background: url(../img/arrow.svg) center/contain no-repeat;
+			flex-shrink: 0;
 		}
 	}
 }

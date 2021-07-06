@@ -366,6 +366,14 @@
 		line-height: 1.56;
 		color: #868686;
 	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		padding: 25px 0 0;
+		.btn {
+			width: 192px;
+		}
+	}
 }
 
 .ticks {
