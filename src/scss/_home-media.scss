@@ -152,9 +152,10 @@
         }
         &__logo {
             display: none;
-            margin: 0 12px 0 0;
+            margin: 0 3px 0 0;
             &--mobile {
                 display: flex;
+                margin-left: -5px;
             }
             img {
                 margin: 0;
@@ -170,7 +171,7 @@
             padding: 0;
             min-width: unset;
             width: auto;
-            padding: 0 15px;
+            padding: 0 10px;
             flex-shrink: 1;
             flex-grow: 0;
             flex-basis: auto;
@@ -178,6 +179,9 @@
         }
         &__menu {
             font-size: 14px;
+            svg {
+                display: none;
+            }
         }
         &__login {
             margin: 0 4px;
