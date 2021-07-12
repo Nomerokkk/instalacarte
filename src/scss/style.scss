@@ -279,6 +279,32 @@ b, strong {
 			z-index: -1;
 		}
 	}
+	&--border-red {
+		background: #F8F8F8;
+		color: #111224;
+		border: 1px solid #EC2CA3;
+		min-width: 120px;
+		&:before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			opacity: 0;
+			-webkit-transition: .3s ease;
+			transition: .3s ease;
+			@extend .gradient;
+		}
+		&:hover {
+			background: none !important;
+			color: #fff;
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
 	&.disabled {
 		cursor: no-drop;
 	}

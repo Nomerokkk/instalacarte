@@ -59,6 +59,12 @@
 	.person-wrapper {
 		margin-left: 16px;
 	}
+	&__login {
+		margin-left: 15px;
+	}
+	&__menu {
+		margin-left: auto;
+	}
 }
 
 .person-home {
@@ -592,6 +598,10 @@
 .login {
 	width: 408px;
 	background: transparent;
+	&__text {
+		color: green;
+		margin: -5px 0 20px;
+	}
 	&__tabs {
 		display: flex;
 		font-size: 18px;
@@ -671,8 +681,11 @@
 	}
 	&__lost {
 		text-align: center;
-		margin: 20px 0 0;
+		margin: 20px 0;
 		font-family: $strat;
+		&:last-child {
+			margin-bottom: 0;
+		}
 		a {
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;

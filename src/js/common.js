@@ -240,10 +240,7 @@ $window.on('load', function() {
 $(function() {
 	var $time = $('.j-time');
 
-	$time.mask('99:99')
-
-	$time.datepicker({
-		onlyTimepicker: true,
-		timepicker: true
-	});
+	if($time.length > 0) {
+		$time.mask('99:99');
+	}
 });

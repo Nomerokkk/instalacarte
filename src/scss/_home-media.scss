@@ -168,7 +168,6 @@
             order: 2;
             height: 30px;
             padding: 0;
-            margin-left: auto;
             min-width: unset;
             width: auto;
             padding: 0 15px;
@@ -176,7 +175,13 @@
             flex-grow: 0;
             flex-basis: auto;
             overflow: hidden;
-            margin-right: 12px;
+        }
+        &__menu {
+            font-size: 14px;
+        }
+        &__login {
+            margin: 0 4px;
+            font-size: 14px;
         }
         .person-home {
             order: 3;
