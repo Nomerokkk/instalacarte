@@ -829,9 +829,6 @@ b, strong {
         height: 15px;
         text-transform: uppercase;
     }
-    &__title-wrap {
-        
-    }
     &__title {
         position: relative;
         z-index: 2;
@@ -883,6 +880,9 @@ b, strong {
         flex-shrink: 0;
         margin-left: auto;
         padding: 0 0 20px 30px;
+        &--no-sell {
+            padding: 0 0 0 30px;
+        }
     }
     &__add {
         position: absolute;
@@ -1082,7 +1082,6 @@ b, strong {
     left: 0;
     bottom: 0;
     z-index: 1002 !important;
-    transition: .2s bottom, .2s height, .1s transform;
     height: 72px;
     transform: translateY(100%);
     user-select: all !important;
@@ -1547,6 +1546,7 @@ b, strong {
                 color: $black;
                 height: 100%;
                 padding: 0 15px;
+                background: rgba(#fff, 0.001);
                 &:placeholder-shown {
                     + div {
                         opacity: 1;
@@ -1558,7 +1558,6 @@ b, strong {
                 appearance: none;
                 position: relative;
                 display: block;
-                background: rgba(#fff, 0);
             }
             &.select {
                 &:after {
@@ -1571,6 +1570,9 @@ b, strong {
                     right: 0;
                     background: url(../img-mobile/arrow.svg) center/contain no-repeat;
                 }
+            }
+            &.required {
+                background: rgba(yellow, .18);
             }
         }
         &-placeholder {

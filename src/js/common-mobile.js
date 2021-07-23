@@ -325,6 +325,8 @@ $(function() {
 
                 gsap.to($ordering[0], {y: 0, duration: .3});
 
+                animate_symbols($ordering.find('.j-placeholder'));
+                
                 change_tabs_item();
             } else {
                 $basket.hide();
@@ -398,7 +400,6 @@ $(function() {
                     gsap.to($ordering_offset[0], {height: distance + 88, duration: .3});
                 }
             }
-            console.log('asd')
         },
         swipeDown: function(event, direction, distance, duration, fingerCount) {
             if(distance > 100) {
@@ -495,16 +496,18 @@ $(function() {
         var $this = $(this),
             id = $this.attr('data-tab');
 
-        $item.removeClass('active');
-        $tabs_wrapper.removeClass('active');
-        $tabs_wrapper.find('.j-title-span').removeAttr('style');
+        if(!$this.is('.active')) {
+            $item.removeClass('active');
+            $tabs_wrapper.removeClass('active');
+            $tabs_wrapper.find('.j-title-span').removeAttr('style');
 
-        $this.addClass('active');
-        $(id).addClass('active');
+            $this.addClass('active');
+            $(id).addClass('active');
 
-        animate_symbols($(id).find('.j-placeholder'));
+            animate_symbols($(id).find('.j-placeholder'));
 
-        change_tabs_item();
+            change_tabs_item();
+        }
     });
 });
 
