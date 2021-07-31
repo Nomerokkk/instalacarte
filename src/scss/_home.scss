@@ -52,6 +52,7 @@
 	&__email {
 		display: block;
 		margin-right: 36px;
+		margin-left: auto;
 		&:hover {
 			color: $red;
 		}
@@ -61,9 +62,6 @@
 	}
 	&__login {
 		margin-left: 15px;
-	}
-	&__menu {
-		margin-left: auto;
 	}
 }
 

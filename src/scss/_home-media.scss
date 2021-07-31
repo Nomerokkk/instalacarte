@@ -27,6 +27,9 @@
         &__email {
             display: none;
         }
+        .lang {
+            margin-left: auto;
+        }
     }
 
     .banner {
@@ -164,10 +167,11 @@
         &__info2 {
             width: 100%;
             justify-content: space-between;
+            flex-grow: 1;
         }
         .btn {
             order: 2;
-            height: 30px;
+            height: 36px;
             padding: 0;
             min-width: unset;
             width: auto;
@@ -179,12 +183,9 @@
         }
         &__menu {
             font-size: 14px;
-            svg {
-                display: none;
-            }
         }
         &__login {
-            margin: 0 4px;
+            margin: 0;
             font-size: 14px;
         }
         .person-home {
@@ -195,8 +196,8 @@
             order: 4;
             margin: 0;
             &__title {
-                height: 32px;
-                padding: 10px 6px;
+                height: 36px;
+                padding: 10px 8px;
                 width: 73px;
                 &:before {
                     content: none;
@@ -231,7 +232,7 @@
                     transform: translateY(0);
                 }
                 a {
-                    padding: 5px 6px;
+                    padding: 5px 8px;
                     overflow: hidden;
                     white-space: nowrap;
                     display: block;
@@ -385,6 +386,12 @@
     }
 }
 
-@media all and (max-width: 479px) {
-	
+@media all and (max-width: 360px) {
+	.header {
+        &__menu {
+            svg {
+                display: none;
+            }
+        }
+    }
 }
