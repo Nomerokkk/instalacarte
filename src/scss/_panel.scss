@@ -448,6 +448,9 @@
 	&__file {
 		margin-bottom: 20px;
 		display: none;
+		&.active-target {
+			display: block;
+		}
 	}
 	&__load-img {
 		width: 183px;
