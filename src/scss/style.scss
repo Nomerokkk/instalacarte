@@ -7,7 +7,22 @@ $strat: 'Stratos LC Web';
 $black: #111224;
 
 @import '_fonts.scss';
+
 @import '_normalize.scss';
+
+@import '_mixins.scss';
+
+
+* {
+    &::selection {
+        background: $orange;
+		color: #fff;
+    }
+	@media all and (min-width: 1201px) {
+		@include scrollbars(10px, #000, #4e4a74);
+	}
+}
+
 
 .j-load-item .j-load-el {
 	position: relative;
@@ -76,17 +91,6 @@ b, strong {
 	font-weight: 600;
 }
 
-*::-webkit-scrollbar {
-	width: 10px;
-}
- 
-*::-webkit-scrollbar-track {
-	background: #d9d9d9;
-}
- 
-*::-webkit-scrollbar-thumb {
-	background: #4e4a74;
-}
 
 
 .container {
@@ -107,6 +111,15 @@ b, strong {
 
 .gradient {
 	background: linear-gradient(to left, $orange, $red);
+}
+.gradient-btn {
+	background: linear-gradient(to right, $red, $orange, $red);
+	background-size: 200% 100%;
+	background-position: left top;
+	&:hover {
+		background-position: 100% top;
+		box-shadow: 0 0 15px 0 rgba($orange, .8);
+	}
 }
 .gradient-hover {
 	background: linear-gradient(to left, $red, $orange);
@@ -207,7 +220,7 @@ b, strong {
 	font-size: 16px;
 	font-weight: 700;
 	cursor: pointer;
-	transition: .3s box-shadow ease;
+	transition: .3s all ease;
 	fill: #fff;
 	white-space: nowrap;
 	border: 0;
@@ -215,10 +228,8 @@ b, strong {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	@extend .gradient;
-	&:not(.disabled):not(.btn--border):not(.btn--white):hover {
-		@extend .gradient-hover;
-		box-shadow: 0 0 15px 0 rgba($orange, .8);
+	&:not(.disabled):not(.btn--border):not(.btn--white):not(.btn--border-red) {
+		@extend .gradient-btn;
 	}
 	svg {
 		width: 18px;
@@ -228,13 +239,15 @@ b, strong {
 	&--white {
 		background: #fff;
 		fill: $red;
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 4px 30px rgba(#000, 0.1);
+		color: #000;
+		border: 1px solid #fff;
 		span {
 			@extend .gradient-text;
 		}
 		&:hover {
 			background: #fff;
-			box-shadow: 0 0 15px 0 rgba(254,98,76,0.8);
+			box-shadow: 0 0 15px 0 rgba($orange,0.3);
 		}
 		svg {
 			margin-right: 10px;
@@ -413,13 +426,11 @@ textarea.input {
 	}
 	.list {
 		position: absolute;
-		border-radius: 30px;
 		border: 1px solid #E8E8E8;
 		background: #f8f8f8;
 		left: 0;
 		width: 100%;
-		border-top-right-radius: 0;
-		border-top-left-radius: 0;
+		border-radius: 0 0 30px 30px;
 		border-top: 0;
 		padding: 10px 26px;
 		position: absolute;
@@ -429,9 +440,10 @@ textarea.input {
 		transition: .3s all ease;
 		margin-top: 1px;
 		visibility: hidden;
-		max-height: 400px;
+		max-height: 250px;
 		overflow: auto;
 		z-index: 100;
+		box-shadow: 0 10px 10px rgba(#000, .05);
 		li {
 			padding: 5px 0;
 			&.selected {
@@ -447,6 +459,11 @@ textarea.input {
 		height: 100%;
 		align-items: center;
 		justify-content: space-between;
+		span {
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;	
+		}
 		&:after {
 			content: '';
 			width: 10px;
@@ -454,6 +471,7 @@ textarea.input {
 			display: block;
 			background: url(../img/arrow.svg) center/contain no-repeat;
 			flex-shrink: 0;
+			margin: 0 0 0 10px;
 		}
 	}
 }

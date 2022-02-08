@@ -160,7 +160,9 @@ $(function() {
 			default_img = $this.attr('data-default-img');
 
 		$this.addClass('hide');
-		$wrapper.find('.j-file-img').attr('src', default_img);
+		$wrapper.find('.j-file-img')
+			.attr('src', default_img)
+			.hide();
 		$wrapper.find('.j-file').val('');
 	});
 });

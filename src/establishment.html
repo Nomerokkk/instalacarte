@@ -28,34 +28,23 @@
 						</div>
 						<div class="settings__item">
 							<div class="settings__title">
-								Email Adress
-							</div>
-							<div class="settings__input">
-								<input type="text" class="input" placeholder="Email">
-							</div>
-						</div>
-						<div class="settings__item">
-							<div class="settings__title">
-								Password
-							</div>
-							<div class="settings__input">
-								<input type="text" class="input" autocomplete="new-password">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="settings__bl">
-					<div class="settings__inner">
-						<div class="settings__item">
-							<div class="settings__title">
-								Country
-							</div>
-							<div class="settings__input">
-								<select class="select j-select input">
-									<option>USA</option>
-									<option>Russia</option>
-									<option>Ukraine</option>
-									<option>Poland</option>
+								Language of menu
+							</div> 
+							<div class="settings__input settings_country">
+								<select id="languages" class="select j-select input">
+									<option value="1">English</option> 
+									<option value="4">El español</option> 
+									<option value="5">Italiano</option>
+									<option value="6">Français</option>
+									<option value="7">Deutsch</option>
+									<option value="13">Türkçe</option> 
+									<option value="8">Portuguesa</option>
+									<option value="9">漢語</option> 
+									<option value="10">اللغة العربية</option> 
+									<option value="11">日本語</option> 
+									<option value="12">हिन्दी</option> 
+									<option value="2">Русский</option> 
+									<option value="3">Język polski</option>
 								</select>
 							</div>
 						</div>
@@ -72,6 +61,44 @@
 						<button class="btn" type="submit">
 							Save
 						</button>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						QR Code
+					</div>
+					<a href="#success" class="btn settings__code-btn">
+						Download QR code
+					</a>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								Link
+							</div>
+							<div class="settings__input">
+								<div class="settings__code-row j-copy-wrapper">
+									<input type="text" class="input j-copy-input" placeholder="URL link here">
+									<div class="btn j-copy">
+										Copy
+									</div>
+									<div class="j-tooltip tooltip">
+										Скопировано
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="settings-order__buttons settings-buttons">
+							<div class="settings-order__buttons-col">
+								<a href="menu.html" class="settings-order__btn btn disabled">
+									Go to menu
+								</a>
+							</div>
+							<div class="settings-order__buttons-col">
+								<a href="menu.html" class="btn disabled">
+									Go to orders
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="settings__bl">
@@ -376,44 +403,6 @@
 						</div>
 						<div class="settings-order__buttons-col">
 							<div class="btn settings-order__btn active">Add employee</div>
-						</div>
-					</div>
-				</div>
-				<div class="settings__bl">
-					<div class="console__title">
-						QR Code
-					</div>
-					<a href="#success" class="btn settings__code-btn">
-						Download QR code
-					</a>
-					<div class="settings__inner">
-						<div class="settings__item">
-							<div class="settings__title">
-								Link
-							</div>
-							<div class="settings__input">
-								<div class="settings__code-row j-copy-wrapper">
-									<input type="text" class="input j-copy-input" placeholder="URL link here">
-									<div class="btn j-copy">
-										Copy
-									</div>
-									<div class="j-tooltip tooltip">
-										Скопировано
-									</div>
-								</div>	
-							</div>
-						</div>
-						<div class="settings-order__buttons settings-buttons">
-							<div class="settings-order__buttons-col">
-								<a href="menu.html" class="settings-order__btn btn disabled">
-									Go to menu
-								</a>
-							</div>
-							<div class="settings-order__buttons-col">
-								<a href="menu.html" class="btn disabled">
-									Go to orders
-								</a>
-							</div>
 						</div>
 					</div>
 				</div>

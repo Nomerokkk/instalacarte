@@ -1,0 +1,15 @@
+@mixin scrollbars($size, $scrollbar, $thumb) {
+    scrollbar-width: thin;
+    scrollbar-color: $thumb rgba($scrollbar, .1) !important;
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+        background: rgba($scrollbar, .1);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $thumb;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}

@@ -38,12 +38,35 @@
 	<!--HEADER-->
 	<header class="header-panel">
 		<div class="header-panel__wrapper">
-			<a href="orders.html" class="btn header-panel__help-btn disabled">
-				Orders
-			</a>
-            <a href="#help" class="btn header-panel__help-btn" data-fancybox>
-				Help
-			</a>
+			<div class="restaurants-nav">
+				<select class="select j-select input">
+					<option value="Restaurant 1">Restaurant 1</option>
+					<option value="Restaurant 2">Restaurant 2</option>
+					<option value="Restaurant 3">Restaurant 3</option>
+					<option value="Restaurant 4">Restaurant 4</option>
+				</select>
+				<button type="button" class="restaurants-nav__plus restaurants-nav__btn btn" data-fancybox data-src="#add-restaurant">
+					<svg>
+						<use xlink:href="img/plus.svg#icon"/>
+					</svg>
+				</button>
+				<button type="button" class="restaurants-nav__remove restaurants-nav__btn btn btn--white" data-fancybox data-src="#remove-restaurant">
+					<svg>
+						<use xlink:href="img/delete.svg#icon"/>
+					</svg>
+				</button>
+			</div>
+			<div class="header-panel__btns">
+				<!-- <a href="#add-restaurant" class="btn header-panel__help-btn" data-fancybox>
+					Add Multiple Restaurants
+				</a> -->
+				<a href="orders.html" class="btn disabled">
+					Order
+				</a>
+				<a href="#help" class="btn" data-fancybox>
+					Help
+				</a>
+			</div>
 			<a href="mailto:hello@instalacarte.com" class="header__email">
 				hello@instalacarte.com
 			</a>
@@ -112,6 +135,11 @@
 					</ul>
 				</li>
 				<li>
+					<a href="customization.html" class="menu__link ">
+						Customization
+					</a>
+				</li>
+				<li>
 					<a href="orders.html" class="menu__link  disabled">
 						Orders
 					</a>
@@ -146,34 +174,23 @@
 						</div>
 						<div class="settings__item">
 							<div class="settings__title">
-								Email Adress
-							</div>
-							<div class="settings__input">
-								<input type="text" class="input" placeholder="Email">
-							</div>
-						</div>
-						<div class="settings__item">
-							<div class="settings__title">
-								Password
-							</div>
-							<div class="settings__input">
-								<input type="text" class="input" autocomplete="new-password">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="settings__bl">
-					<div class="settings__inner">
-						<div class="settings__item">
-							<div class="settings__title">
-								Country
-							</div>
-							<div class="settings__input">
-								<select class="select j-select input">
-									<option>USA</option>
-									<option>Russia</option>
-									<option>Ukraine</option>
-									<option>Poland</option>
+								Language of menu
+							</div> 
+							<div class="settings__input settings_country">
+								<select id="languages" class="select j-select input">
+									<option value="1">English</option> 
+									<option value="4">El español</option> 
+									<option value="5">Italiano</option>
+									<option value="6">Français</option>
+									<option value="7">Deutsch</option>
+									<option value="13">Türkçe</option> 
+									<option value="8">Portuguesa</option>
+									<option value="9">漢語</option> 
+									<option value="10">اللغة العربية</option> 
+									<option value="11">日本語</option> 
+									<option value="12">हिन्दी</option> 
+									<option value="2">Русский</option> 
+									<option value="3">Język polski</option>
 								</select>
 							</div>
 						</div>
@@ -190,6 +207,44 @@
 						<button class="btn" type="submit">
 							Save
 						</button>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						QR Code
+					</div>
+					<a href="#success" class="btn settings__code-btn">
+						Download QR code
+					</a>
+					<div class="settings__inner">
+						<div class="settings__item">
+							<div class="settings__title">
+								Link
+							</div>
+							<div class="settings__input">
+								<div class="settings__code-row j-copy-wrapper">
+									<input type="text" class="input j-copy-input" placeholder="URL link here">
+									<div class="btn j-copy">
+										Copy
+									</div>
+									<div class="j-tooltip tooltip">
+										Скопировано
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="settings-order__buttons settings-buttons">
+							<div class="settings-order__buttons-col">
+								<a href="menu.html" class="settings-order__btn btn disabled">
+									Go to menu
+								</a>
+							</div>
+							<div class="settings-order__buttons-col">
+								<a href="menu.html" class="btn disabled">
+									Go to orders
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="settings__bl">
@@ -497,44 +552,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="settings__bl">
-					<div class="console__title">
-						QR Code
-					</div>
-					<a href="#success" class="btn settings__code-btn">
-						Download QR code
-					</a>
-					<div class="settings__inner">
-						<div class="settings__item">
-							<div class="settings__title">
-								Link
-							</div>
-							<div class="settings__input">
-								<div class="settings__code-row j-copy-wrapper">
-									<input type="text" class="input j-copy-input" placeholder="URL link here">
-									<div class="btn j-copy">
-										Copy
-									</div>
-									<div class="j-tooltip tooltip">
-										Скопировано
-									</div>
-								</div>	
-							</div>
-						</div>
-						<div class="settings-order__buttons settings-buttons">
-							<div class="settings-order__buttons-col">
-								<a href="menu.html" class="settings-order__btn btn disabled">
-									Go to menu
-								</a>
-							</div>
-							<div class="settings-order__buttons-col">
-								<a href="menu.html" class="btn disabled">
-									Go to orders
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</form>
 	</div>
@@ -579,8 +596,75 @@
         </div>
     </div>
 
-    <div class="_vue-flash-msg-body_error _vue-flash-msg-body _vue-flash-msg-_right-top flash-wrapper-class" style="top: 20px;">
-        <div class="_vue-flash-msg-wrapper"><!---->
+    <div class="modal modal-restaurant" id="add-restaurant">
+        <div class="modal__inner">
+            <div class="modal__title">
+                Add restaurant
+            </div>
+            <div class="input-wrapper">
+                <div class="label">
+                    <div class="label__title">
+                        Copy previous restaurant data
+                    </div>
+                    <select class="select j-select input">
+                        <option value="Restaurant 1">Restaurant 1</option>
+                        <option value="Restaurant 2">Restaurant 2</option>
+                        <option value="Restaurant 3">Restaurant 3</option>
+                        <option value="Restaurant 4">Restaurant 4</option>
+                    </select>
+                </div>
+                <div class="modal-restaurant__btns">
+                    <div class="modal-restaurant__btns-col">
+                        <button type="button" class="btn">
+                            <svg>
+                                <use xlink:href="img/copy.svg#icon"/>
+                            </svg>
+                            Copy
+                        </button>
+                    </div>
+                    <div class="modal-restaurant__btns-col">
+                        <button type="button" class="btn btn--white">
+                            <svg>
+                                <use xlink:href="img/copy-no.svg#icon"/>
+                            </svg>
+                            No Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-restaurant" id="remove-restaurant">
+        <div class="modal__inner">
+            <div class="modal__title">
+                Delete restaurant
+            </div>
+            <div class="input-wrapper">
+                <div class="label">
+                    <div class="label__title">
+                        Choose restaurant
+                    </div>
+                    <select class="select j-select input">
+                        <option value="Restaurant 1">Restaurant 1</option>
+                        <option value="Restaurant 2">Restaurant 2</option>
+                        <option value="Restaurant 3">Restaurant 3</option>
+                        <option value="Restaurant 4">Restaurant 4</option>
+                    </select>
+                </div>
+                <div class="modal-restaurant__btns">
+                    <div class="modal-restaurant__btns-col">
+                        <button type="button" class="btn">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="_vue-flash-msg-body_error _vue-flash-msg-body _vue-flash-msg-_right-top flash-wrapper-class" style="top: 20px;">
+        <div class="_vue-flash-msg-wrapper">
             <div class="_vue-flash-msg-body__content">
                 <p role="heading" class="_vue-flash-msg-body__title"></p>
                 <p class="_vue-flash-msg-body__text">
@@ -591,7 +675,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="libs/jquery.min.js"></script>
     <script src="libs/underscore.min.js"></script>
@@ -602,5 +686,7 @@
     <script src="libs/svg4everybody.min.js"></script>
     <script src="libs/jquery.nice-select.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="libs/pickr.min.js"></script>
+    <script src="js/colors.js"></script>
 </body>
 </html>

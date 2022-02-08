@@ -23,8 +23,75 @@
         </div>
     </div>
 
-    <div class="_vue-flash-msg-body_error _vue-flash-msg-body _vue-flash-msg-_right-top flash-wrapper-class" style="top: 20px;">
-        <div class="_vue-flash-msg-wrapper"><!---->
+    <div class="modal modal-restaurant" id="add-restaurant">
+        <div class="modal__inner">
+            <div class="modal__title">
+                Add restaurant
+            </div>
+            <div class="input-wrapper">
+                <div class="label">
+                    <div class="label__title">
+                        Copy previous restaurant data
+                    </div>
+                    <select class="select j-select input">
+                        <option value="Restaurant 1">Restaurant 1</option>
+                        <option value="Restaurant 2">Restaurant 2</option>
+                        <option value="Restaurant 3">Restaurant 3</option>
+                        <option value="Restaurant 4">Restaurant 4</option>
+                    </select>
+                </div>
+                <div class="modal-restaurant__btns">
+                    <div class="modal-restaurant__btns-col">
+                        <button type="button" class="btn">
+                            <svg>
+                                <use xlink:href="img/copy.svg#icon"/>
+                            </svg>
+                            Copy
+                        </button>
+                    </div>
+                    <div class="modal-restaurant__btns-col">
+                        <button type="button" class="btn btn--white">
+                            <svg>
+                                <use xlink:href="img/copy-no.svg#icon"/>
+                            </svg>
+                            No Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-restaurant" id="remove-restaurant">
+        <div class="modal__inner">
+            <div class="modal__title">
+                Delete restaurant
+            </div>
+            <div class="input-wrapper">
+                <div class="label">
+                    <div class="label__title">
+                        Choose restaurant
+                    </div>
+                    <select class="select j-select input">
+                        <option value="Restaurant 1">Restaurant 1</option>
+                        <option value="Restaurant 2">Restaurant 2</option>
+                        <option value="Restaurant 3">Restaurant 3</option>
+                        <option value="Restaurant 4">Restaurant 4</option>
+                    </select>
+                </div>
+                <div class="modal-restaurant__btns">
+                    <div class="modal-restaurant__btns-col">
+                        <button type="button" class="btn">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="_vue-flash-msg-body_error _vue-flash-msg-body _vue-flash-msg-_right-top flash-wrapper-class" style="top: 20px;">
+        <div class="_vue-flash-msg-wrapper">
             <div class="_vue-flash-msg-body__content">
                 <p role="heading" class="_vue-flash-msg-body__title"></p>
                 <p class="_vue-flash-msg-body__text">
@@ -35,7 +102,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="libs/jquery.min.js"></script>
     <script src="libs/underscore.min.js"></script>
@@ -46,5 +113,7 @@
     <script src="libs/svg4everybody.min.js"></script>
     <script src="libs/jquery.nice-select.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="libs/pickr.min.js"></script>
+    <script src="js/colors.js"></script>
 </body>
 </html>

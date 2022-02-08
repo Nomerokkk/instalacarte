@@ -5,6 +5,7 @@
 	min-width: 1170px;
 	display: flex;
 	flex-direction: column;
+	overflow: visible;
 	&__wrapper {
 		padding-left: 342px;
 		padding-top: 124px;
@@ -20,14 +21,16 @@
 .header-panel {
 	height: 74px;
 	background: #fff;
-	width: 100%;
 	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 	z-index: 100;
 	left: 0;
 	top: 0;
+	right: 0;
 	position: fixed;
 	font-size: 18px;
 	font-weight: 700;
+	padding: 0 0 0 342px;
+	min-width: 1170px;
 	&__wrapper {
 		display: flex;
 		justify-content: flex-end;
@@ -38,11 +41,68 @@
 	.lang {
 		margin-right: 17px;
 	}
-	&__help-btn {
-		margin-right: 30px;
+	&__btns {
+		display: flex;
+		margin: 0 30px 0 0;
+		.btn {
+			margin: 0 0 0 30px;
+		}
 	}
 	.header__email {
 		margin-left: 0;
+	}
+}
+
+.restaurants-nav {
+	display: flex;
+	margin: 0 auto 0 0;
+	.select {
+		margin: 0;
+		font-size: 14px;
+		width: 200px;
+		background: #fff;
+		border: 1px solid #fff;
+		box-shadow: 0px 4px 30px rgba(#000, .1);
+		font-weight: 500;
+		.list {
+			border: 0;
+		}
+	}
+	&__btn {
+		width: 48px;
+		height: 48px;
+		@extend .gradient;
+		border-radius: 50%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: .3s all ease;
+		fill: #fff;
+		min-width: unset;
+		padding: 0;
+		flex-shrink: 0;
+		svg {
+			width: 20px;
+			height: 20px;
+			margin: 0;
+		}
+	}
+	&__plus {
+		margin: 0 10px;
+	}
+	&__remove {
+		fill: #000;
+		border: 1px solid #fff;
+		&:hover {
+			border-color: $red;
+			box-shadow: none;
+			fill: $red;
+		}
+		svg {
+			width: 16px;
+			height: 20px;
+		}
 	}
 }
 
@@ -423,6 +483,8 @@
 	}
 }
 
+@import '_customization.scss';
+
 .create-cat {
 	width: 500px;
 	&--parent {
@@ -566,3 +628,30 @@
 		}
 	}
 }
+
+.modal-restaurant {
+	width: 510px;
+	padding: 32px 82px 44px;
+	.modal {
+		&__inner {
+			padding: 0;
+		}
+	}
+	&__btns {
+		display: flex;
+		margin: 0 -10px;
+		justify-content: center;
+		&-col {
+			padding: 0 10px;
+		}
+	}
+	.btn {
+		svg {
+			width: 12px;
+			height: 14px;
+			margin: 0 7px 0 0;
+		}
+	}
+}
+
+@import '_pickr.scss';

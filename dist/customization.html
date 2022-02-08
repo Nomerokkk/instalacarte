@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Wi-Fi</title>
+	<title>Customization</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 
@@ -135,7 +135,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="customization.html" class="menu__link ">
+					<a href="customization.html" class="menu__link active">
 						Customization
 					</a>
 				</li>
@@ -149,58 +149,233 @@
 	</div>
 
 	<div class="panel__wrapper">
-		<form class="console">
-			<div class="console__top">
-				<div class="console__title">		
-					Wi-Fi QR Code Generation
+		<form class="console customization">
+			<div class="settings">
+				<div class="settings__bl">
+					<div class="customization__row row">
+						<div class="customization__col col">
+							<div class="colors j-tab-wrapper">
+								<div class="colors__top">
+									<div class="console__title">
+										Menu colors
+									</div>
+								</div>
+								<div class="colors__row">
+									<div class="colors__col">
+										<div class="colors__btn j-color-btn" data-tab style="background: #111224;"></div>
+										<div class="colors__title">
+											Color 1
+										</div>
+									</div>
+									<div class="colors__col">
+										<div class="colors__btn j-color-btn" data-tab style="background: #EC2CA3;"></div>
+										<div class="colors__title">
+											Color 2
+										</div>
+									</div>
+									<div class="colors__col">
+										<div class="colors__btn j-color-btn" data-tab style="background: #FE624C;"></div>
+										<div class="colors__title">
+											Color 3
+										</div>
+									</div>
+								</div>
+								<div class="colors__place">
+									<!--color1-->
+									<div class="colors__color j-tab">
+										<div class="colors__pickr j-pickr-wrap">
+											<input type="hidden" class="j-pickr" name="color4" data-var="black" value="#111224" data-old-color="#111224">
+										</div>
+									</div>
+									<!--color2-->
+									<div class="colors__color j-tab">
+										<div class="colors__pickr j-pickr-wrap">
+											<input type="hidden" class="j-pickr" name="color4" data-var="red" value="#EC2CA3" data-old-color="#EC2CA3">
+										</div>
+									</div>
+									<!--color3-->
+									<div class="colors__color j-tab">
+										<div class="colors__pickr j-pickr-wrap">
+											<input type="hidden" class="j-pickr" name="color4" data-var="orange" value="#FE624C" data-old-color="#FE624C">
+										</div>
+									</div>
+								</div>
+								<div class="settings-order__buttons">
+									<div class="settings-order__buttons-col">
+										<button class="btn j-save" type="submit">
+											Save
+										</button>
+									</div>
+									<div class="settings-order__buttons-col">
+										<div class="btn btn--border-red j-reset-color">Clear settings</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<button class="btn" type="submit">
-					Save
-				</button>
+				<div class="settings__bl">
+					<div class="customization__row row">
+						<div class="customization__col col">
+							<div class="colors j-tab-wrapper">
+								<div class="colors__top">
+									<div class="console__title">
+										Change menu background
+									</div>
+								</div>
+								<div class="colors__row">
+									<div class="colors__col">
+										<div class="colors__btn j-color-btn" data-tab style="background: #ffffff;"></div>
+										<div class="colors__title">
+											Background 1
+										</div>
+									</div>
+									<div class="colors__col">
+										<div class="colors__btn j-color-btn" data-tab style="background: #F8F8F8;"></div>
+										<div class="colors__title">
+											Background 2
+										</div>
+									</div>
+									<div class="colors__col">
+										<div class="colors__btn j-color-btn" data-tab style="background: #E8E8E8;"></div>
+										<div class="colors__title">
+											Border
+										</div>
+									</div>
+								</div>
+								<div class="colors__place">
+									<!--color1-->
+									<div class="colors__color j-tab">
+										<div class="colors__pickr j-pickr-wrap">
+											<input type="hidden" class="j-pickr" name="color1" data-var="bg_white" value="#ffffff" data-old-color="#ffffff">
+										</div>
+									</div>
+									<!--color2-->
+									<div class="colors__color j-tab">
+										<div class="colors__pickr j-pickr-wrap">
+											<input type="hidden" class="j-pickr" name="color2" data-var="bg_grey" value="#F8F8F8" data-old-color="#F8F8F8">
+										</div>
+									</div>
+									<!--color3-->
+									<div class="colors__color j-tab">
+										<div class="colors__pickr j-pickr-wrap">
+											<input type="hidden" class="j-pickr" name="color2" data-var="border" value="#E8E8E8" data-old-color="#E8E8E8">
+										</div>
+									</div>
+								</div>
+								<div class="settings-order__buttons">
+									<div class="settings-order__buttons-col">
+										<button class="btn j-save" type="submit">
+											Save
+										</button>
+									</div>
+									<div class="settings-order__buttons-col">
+										<div class="btn btn--border-red j-reset-color">Clear settings</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="customization__or">
+							<span>or</span>
+						</div>
+						<div class="customization__col col">
+							<div class="console__title">
+								Upload menu background image
+							</div>
+							<label class="new-item__file j-file-wrap">
+								<input type="file" class="j-file j-background">
+								<div class="new-item__file-img">
+									<button type="button" class="fancybox-button fancybox-close-small j-remove-img j-background-remove hide" data-default-img>
+										<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
+									</button>
+									<img src="" alt="" class="j-file-img">
+									<div class="new-item__file-text">
+										<svg>
+											<use xlink:href="img/upload.svg#icon"></use>
+										</svg>
+										<div>Upload Photo</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="settings__bl">
+					<div class="console__title">
+						Menu view options
+					</div>
+					<div class="customization__row row">
+						<div class="customization__col col">
+							<label class="view-check input">
+								<input type="radio" name="view" checked>
+								<div class="view-check__bl">
+									<div class="view-check__title">
+										<div class="view-check__icon">
+											<svg style="width: 21px;height: 14px;">
+												<use xlink:href="img-mobile/sort1.svg#icon"/>
+											</svg>
+										</div>
+										Small photos
+									</div>
+									<div class="view-check__check"></div>
+								</div>
+							</label>
+						</div>
+						<div class="customization__col col">
+							<label class="view-check input">
+								<input type="radio" name="view">
+								<div class="view-check__bl">
+									<div class="view-check__title">
+										<div class="view-check__icon">
+											<svg style="width: 15px;height: 19px;">
+												<use xlink:href="img-mobile/sort2.svg#icon"/>
+											</svg>
+										</div>
+										Big photos
+									</div>
+									<div class="view-check__check"></div>
+								</div>
+							</label>
+						</div>
+						<div class="customization__col col">
+							<label class="view-check input">
+								<input type="radio" name="view">
+								<div class="view-check__bl">
+									<div class="view-check__title">
+										<div class="view-check__icon">
+											<svg style="width: 18px;height: 12px;">
+												<use xlink:href="img-mobile/sort3.svg#icon"/>
+											</svg>
+										</div>
+										Text only
+									</div>
+									<div class="view-check__check"></div>
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="customization__row row">
+						<div class="customization__col col">
+							<div class="settings-order__buttons">
+								<div class="settings-order__buttons-col">
+									<button class="btn j-save" type="submit">
+										Save
+									</button>
+								</div>
+								<div class="settings-order__buttons-col">
+									<div class="btn btn--border-red">Clear settings</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="cat-page">
-				<div class="wifi">
-					<div class="wifi__fields">
-						<div class="settings__item">
-							<div class="settings__title">
-								Шифрование
-							</div>
-							<div class="settings__input">
-								<select class="select j-select input">
-									<option>Отсутствует</option>
-									<option>Присутствует</option>
-								</select>
-							</div>
-						</div>
-						<div class="settings__item">
-							<div class="settings__title">
-								SSID
-							</div>
-							<div class="settings__input">
-								<input type="text" class="input" placeholder="Имя сети">
-							</div>
-						</div>
-						<div class="settings__item">
-							<div class="settings__title">
-								Пароль
-							</div>
-							<div class="settings__input">
-								<input type="password" class="input" placeholder="">
-							</div>
-						</div>
-					</div>
-					<div class="wifi__code">
-						<div class="settings__code-img j-lazy" data-src="img/qr-logo2.png">
-							<img src="img/code.png" alt="">
-						</div>
-						<a href="#" class="settings__code-btn">
-							Download as SVG
-						</a>
-					</div>
-				</div>
+			<div class="customization__iframe j-iframe">
+				<iframe data-src="mobile.html" frameborder="0"></iframe>
 			</div>
 		</form>
 	</div>
+
 
     <div class="modal create-cat" id="help">
         <div class="modal__inner">
