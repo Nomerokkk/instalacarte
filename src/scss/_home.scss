@@ -15,7 +15,7 @@
 	display: flex;
 	align-items: center;
 	z-index: 100;
-	transition: .3s all ease;
+	transition: .3s height ease;
 	&.fixed {
 		height: 80px;
 	}
@@ -33,6 +33,7 @@
 		display: flex;
 		align-items: center;
 		text-transform: uppercase;
+		margin: 0 30px 0 0;
 		&--mobile {
 			display: none;
 		}
@@ -51,8 +52,7 @@
 	}
 	&__email {
 		display: block;
-		margin-right: 36px;
-		margin-left: auto;
+		margin: 0 20px 0 auto;
 		&:hover {
 			color: $red;
 		}
@@ -62,6 +62,10 @@
 	}
 	&__login {
 		margin-left: 15px;
+	}
+	&__help {
+		margin: 0 15px 0 0;
+		min-width: 0;
 	}
 }
 
@@ -229,7 +233,7 @@
 		font-weight: 700;
 		font-size: 35px;
 		line-height: 1.11;
-		margin-bottom: 15px;
+		margin: 0 0 15px;
 		position: relative;
 	}
 	&__desc {
@@ -248,6 +252,10 @@
 		bottom: 17px;
 		left: 0;
 		width: 100%;
+	}
+	&__btn2 {
+		width: 200px;
+		margin: 0 auto;
 	}
 	&__btn {
 		background: #fff;
@@ -495,9 +503,8 @@
 	line-height: 1.18;
 	color: #fff;
 	text-align: center;
-	margin-bottom: 40px;
+	margin: 0 0 40px;
 }
-
 
 .build {
 	padding: 95px 0;
@@ -527,7 +534,6 @@
 		margin: 0 auto;
 	}
 }
-
 
 .footer {
 	font-weight: 700;
