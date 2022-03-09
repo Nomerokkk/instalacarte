@@ -401,6 +401,10 @@ b, strong {
 	font-weight: 500;
 }
 
+.error-input .nice-select {
+    border: 2px solid red !important;
+}
+
 textarea.input {
 	height: auto;
 	border-radius: 20px;
