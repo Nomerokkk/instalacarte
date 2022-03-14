@@ -560,6 +560,9 @@ $('input[type="tel"]').intlTelInput({
     separateDialCode: true,
     autoPlaceholder: 'off',
 });
+
+$('.iti__flag').attr('style', 'background-image: url(/img/flags.png);')
+
 $document.on('input', 'input[type="tel"]', function() {
     this.value = this.value.replace(/\D/g,'');
 });
