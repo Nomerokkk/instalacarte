@@ -101,10 +101,10 @@ b, strong {
 
 
 .container {
-	max-width: 1140px;
+	max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 30px;
 }
 .row {
 	margin: 0 -15px;
@@ -143,7 +143,7 @@ b, strong {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1;
-	@media all and (min-width: 1201px) {
+	@media all and (min-width: 768px) {
 		&:hover {
 			ul {
 				opacity: 1;
@@ -235,7 +235,7 @@ b, strong {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	&:not(.disabled):not(.btn--border):not(.btn--white):not(.btn--border-red) {
+	&:not(.btn--border):not(.btn--white):not(.btn--border-red) {
 		@extend .gradient-btn;
 	}
 	svg {
@@ -563,10 +563,25 @@ textarea.input {
 }
 
 
+@media all and (max-width: 767px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	.row {
+		margin: 0 -7px;
+	}
+
+	.col {
+		padding: 0 7px;
+	}
+}
 
 
 @import '_home.scss';
 @import '_home-media.scss';
+
+@import '_blog.scss';
 
 @import '_panel.scss';
 

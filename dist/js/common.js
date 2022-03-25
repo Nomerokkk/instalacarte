@@ -246,3 +246,40 @@ $(function() {
 		$time.mask('99:99');
 	}
 });
+
+
+/*************BLOG SLIDER *************/
+$('.j-blog-slider').each(function() {
+	let $this = $(this);
+
+	new Swiper($this.find('.blog-slider__overflow')[0], {
+		wrapperClass: 'blog-slider__wrapper',
+		slideClass: 'blog-slider__slide',
+		navigation: {
+			nextEl: $this.find('.j-next')[0],
+			prevEl: $this.find('.j-prev')[0],
+		},
+		pagination: {
+			el: $this.find('.j-dots')[0],
+			type: 'bullets',
+		},
+		breakpoints: {
+			993: {
+				slidesPerView: 3,
+				spaceBetween: 30
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 30
+			},
+			481: {
+				slidesPerView: 2,
+				spaceBetween: 15
+			},
+			0: {
+				slidesPerView: 1,
+				spaceBetween: 15
+			}
+		}
+	});
+});
