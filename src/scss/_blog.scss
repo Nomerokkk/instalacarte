@@ -1,5 +1,5 @@
 .blog {
-    padding: 160px 0 90px;
+    padding: 140px 0 90px;
     .row {
         margin-bottom: -30px;
     }
@@ -10,6 +10,34 @@
     .col {
         width: 33.333%;
         margin: 0 0 30px;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+    line-height: 1.5;
+    li {
+        &:after {
+            content: '/';
+            display: inline;
+            margin: 0 10px 0 7px;
+        }
+        &:last-child {
+            font-weight: 600;
+            &:after {
+                content: none;
+            }
+        }
+    }
+    a {
+        text-decoration: underline;
+        opacity: .5;
+        &:hover {
+            @extend .gradient-text;
+            opacity: 1;
+        }
     }
 }
 
@@ -135,20 +163,15 @@
 
 .blog-single {
     &__img {
-        height: 390px;
+        width: 50%;
         border-radius: 20px;
         overflow: hidden;
         position: relative;
-        img {
-            object-fit: cover;
-            object-position: center;
-            width: 100%;
-            height: 100%;
-        }
+        float: left;
+        margin: 0 20px 20px 0;
     }
     &__text {
         line-height: 1.6;
-        margin: 48px 0 0;
         h1, h2, h3, h4, h5, h6 {
             text-transform: uppercase;
             margin: 45px 0 20px;
@@ -192,17 +215,17 @@
                     margin: 0 10px 0 0;
                 }
             }
-            a {
-                font-weight: 700;
-                text-decoration: underline;
-                color: $red;
-                &:hover {
-                    text-decoration: none;
-                }
+        }
+        a {
+            font-weight: 700;
+            text-decoration: underline;
+            color: $red;
+            &:hover {
+                text-decoration: none;
             }
-            span {
-                @extend .gradient-text;
-            }
+        }
+        span {
+            @extend .gradient-text;
         }
     }
 }
@@ -298,9 +321,15 @@
         padding: 80px 0 50px;
     }
 
+    .breadcrumbs {
+        margin: 0 0 15px;
+    }
+
     .blog-single {
         &__img {
-            height: 250px;
+            width: 100%;
+            float: none;
+            margin: 0;
         }
         &__text {
             margin: 30px 0 0;
