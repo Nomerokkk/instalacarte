@@ -763,3 +763,12 @@
 		color: #000;
 	}
 }
+
+
+.seo {
+	padding: 60px 0 50px;
+	&__text {
+		@extend .blog-single__text;
+		margin: 0 !important;
+	}
+}
