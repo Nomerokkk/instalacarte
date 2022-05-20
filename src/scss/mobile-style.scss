@@ -634,8 +634,8 @@ b, strong {
     }
     &__like {
         position: absolute;
-        background: #F8F8F8;
-        border: 1px solid #E8E8E8;
+        background: rgb($bg_grey);
+        border: 1px solid rgb($border);
         border-radius: 50%;
         overflow: hidden;
         width: 28px;
@@ -649,6 +649,9 @@ b, strong {
         z-index: 10;
         cursor: pointer;
         transform: none;
+        svg {
+            stroke: rgb($black);
+        }
     }
     &__img {
         height: 115px;
@@ -730,7 +733,7 @@ b, strong {
         height: 14px;
         position: relative;
         fill: none;
-        stroke: #000;
+        stroke: rgb($black);
         stroke-width: 1.2px;
     }
     &.active {
@@ -792,8 +795,8 @@ b, strong {
         width: 32px;
         height: 32px;
         position: fixed;
-        background: #F8F8F8;
-        border: 1px solid #E8E8E8;
+        background: rgb($bg_grey);
+        border: 1px solid rgb($border);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -801,7 +804,7 @@ b, strong {
     }
     &__close {
         position: absolute;
-        background: #fff;
+        background: rgba($bg_grey);
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
         width: 32px;
         height: 32px;
@@ -812,7 +815,7 @@ b, strong {
         display: flex;
         align-items: center;
         justify-content: center;
-        fill: rgba(#000, .6);
+        fill: rgb($black);
         transition: .3s all ease;
         position: fixed;
         cursor: pointer;
@@ -1139,18 +1142,26 @@ b, strong {
 
 .basket-empty {
     height: 165px;
-    background: url(../img-mobile/empty-basket.svg) right bottom no-repeat, #fff;
+    background: rgba($bg_white);
     z-index: 1000;
-    color: #111224;
+    color: rgb($black);
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
     height: 165px;
     display: none;
     border-radius: 15px 15px 0 0;
+    svg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 120px;
+        height: 158px;
+        fill: rgba($black, .15);
+    }
     &:after {
         content: '';
         position: absolute;
         top: 100%;
-        background: #fff;
+        background: rgb($bg_white);
         height: 9990px;
         width: 100%;
         left: 0;
