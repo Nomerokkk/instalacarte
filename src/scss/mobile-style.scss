@@ -1,7 +1,9 @@
+$font: 'Stratos LC Web';
+
 $orange: var(--orange);
 $red: var(--red);
-$font: 'Stratos LC Web';
 $black: var(--black);
+$white: var(--white);
 
 $bg_grey: var(--bg_grey);
 $bg_white: var(--bg_white);
@@ -497,7 +499,7 @@ b, strong {
         min-width: 59px;
         cursor: pointer;
         &.active {
-            color: #fff;
+            color: rgb($white);
             @extend .gradient;
             border: 0;
         }
@@ -624,7 +626,7 @@ b, strong {
         align-items: center;
         justify-content: center;
         line-height: 1;
-        color: #fff;
+        color: rgb($white);
         border-radius: 10px 0 10px 0;
         position: absolute;
         left: 0;
@@ -696,7 +698,7 @@ b, strong {
         @extend .gradient;
         font-weight: bold;
         font-size: 10px;    
-        color: #fff;
+        color: rgb($white);
         text-transform: uppercase;    
         display: flex;
         align-items: center;
@@ -833,7 +835,7 @@ b, strong {
         @extend .gradient;
         border-radius: 50px 50px 0px 0px;
         font-size: 10px;
-        color: #fff;
+        color: rgb($white);
         padding: 0px 11px 0;
         display: flex;
         align-items: center;
@@ -940,7 +942,7 @@ b, strong {
             position: absolute;
             height: 3px;
             width: 25px;
-            background: #fff;
+            background: rgb($white);
             border-radius: 5px;
         }
     }
@@ -951,7 +953,7 @@ b, strong {
         justify-content: center;
         text-align: center;
         font-size: 15px;
-        color: #fff;
+        color: rgb($white);
         flex-shrink: 0;
         width: 10px;
         transition: .3s width ease;
@@ -964,7 +966,7 @@ b, strong {
         align-items: center;
         justify-content: center;
         @extend .gradient;
-        fill: #fff;
+        fill: rgb($white);
         cursor: pointer;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 1;
@@ -1118,7 +1120,7 @@ b, strong {
 
 .basket {
     height: 60px;
-    color: #fff;
+    color: rgb($white);
     font-weight: 700;
     font-size: 15px;
     padding: 0 15px;
@@ -1298,7 +1300,7 @@ b, strong {
             transition: .3s;
             z-index: 2;
             &.active {
-                color: #fff;
+                color: rgb($white);
             }
             &.disabled {
                 z-index: 0;
@@ -1348,7 +1350,7 @@ b, strong {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            color: rgb($white);
             height: 38px;
             border-radius: 20px 20px 0 0;
             font-size: 12px;
@@ -1379,13 +1381,13 @@ b, strong {
                     height: 14px;
                     position: relative;
                     fill: none;
-                    stroke: #fff;
+                    stroke: rgb($white);
                     stroke-width: 1.2px;
                 }
                 &.active {
                     svg {
-                        fill: #fff;
-                        stroke: #fff;
+                        fill: rgb($white);
+                        stroke: rgb($white);
                     }
                 }
                 &.animated {
@@ -1400,8 +1402,8 @@ b, strong {
             display: flex;
             align-items: center;
             justify-content: center;
-            fill: #fff;
-            color: #fff;
+            fill: rgb($white);
+            color: rgb($white);
             height: 38px;
             border-radius: 0 0 20px 20px;
             font-size: 12px;
@@ -1696,7 +1698,7 @@ b, strong {
         border-radius: 50px;
         @extend .gradient;
         border: 0;
-        color: #fff;
+        color: rgb($white);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1740,7 +1742,7 @@ b, strong {
         font-size: 15px;
         font-weight: 700;
         line-height: 1;
-        color: #fff;
+        color: rgb($white);
         text-align: center;
         margin: 0 auto;
         cursor: pointer;
