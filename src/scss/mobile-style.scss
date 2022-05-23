@@ -4,6 +4,7 @@ $orange: var(--orange);
 $red: var(--red);
 $black: var(--black);
 $white: var(--white);
+$heart_color: var(--heart_color);
 
 $bg_grey: var(--bg_grey);
 $bg_white: var(--bg_white);
@@ -740,8 +741,8 @@ b, strong {
     }
     &.active {
         svg {
-            fill: red;
-            stroke: red;
+            fill: rgb($heart_color);
+            stroke: rgb($heart_color);
         }
     }
     &.animated {
